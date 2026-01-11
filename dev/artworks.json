@@ -1,0 +1,74 @@
+[
+    {
+      "artist": "Jean-Michel Basquiat",
+      "title": "MP, 1984",
+      "medium": "Acrylic and oilstick on canvas",
+      "creation date": "1984",
+      "dimensions_cm": {"height": "218.5", "width": "172.5", "depth": "5"},
+      "usage": "Temporary Admissions"
+    },
+    {
+      "artist": "Elizabeth Peyton",
+      "title": "Spencer (Two Palms), 2002",
+      "medium": "Oil on canvas",
+      "creation date":"2002",
+      "dimensions_cm": {"height": "101.5", "width": "76.2", "depth": "4"},
+      "usage": "Temporary Admissions"
+    },
+    {
+      "artist": "Christopher Wool",
+      "title": "Brown No Halloween, 2005",
+      "medium": "Oil on canvas",
+      "creation date": "2005",
+      "dimensions_cm": {"height": "294.6", "width": "198.1", "depth": "5"},
+      "usage": "Temporary Admissions"
+    },
+    {
+      "artist": "John Chamberlain",
+      "title": "Etruscan Romance, 1984",
+      "medium": "Painted and chromed steel",
+      "creation date": "1984",
+      "dimensions_cm": {"height": "143.5", "width": "284.2", "depth": "78.5 "},
+      "usage": "Temporary Admissions"
+    },
+    {
+      "artist": "Martha Jungwirth",
+      "title": "Ohne Titel, 1987",
+      "medium": "Oil on canvas",
+      "creation date": "1987",
+      "dimensions_cm": {"height": "71.2", "width": "105.8", "depth": "4"},
+      "usage": "Home Use"
+    },
+    {
+      "artist": "Keith Haring",
+      "title": "Acrobats, 1986",
+      "medium": "Acrylic on canvas",
+      "creation date": "1986",
+      "dimensions_cm": {"height": "61","width": "39.7", "depth": "36.9"},
+      "usage": "Home Use"
+    },
+    {
+      "artist": "Damien Hirst",
+      "title": "Midas Asteroid, 2007",
+      "medium": "Spin painting on canvas",
+      "creation date": "2007",
+      "dimensions_cm": {"height": "182.9","width": "121.9", "depth": "4"},
+      "usage": "Temporary Admissions"
+    },
+    {
+      "artist": "David Salle",
+      "title": "Tree of Life #22",
+      "medium": "Acrylic and oil on canvas",
+      "creation date": "2021",
+      "dimensions_cm": {"height": "118","width": "97", "depth": "4"},
+      "usage": "Temporary Admissions"
+    },
+    {
+      "artist": "Katherine Bernhardt",
+      "title": "Papayas in Oaxaca",
+      "medium": "Acrylic on canvas",
+      "creation date": "2017",
+      "dimensions_cm": {"height": "152.4","width": "182.9", "depth": "6"},
+      "usage": "Home Use"
+    }
+]
