@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Barbara Hepworth",
+        "birth_year": "1903",
+        "death_year": "1975",
+        "nationality": "British",
+        "biography": "Barbara Hepworth was a pioneering British sculptor known for her modernist abstract works in stone, wood, and bronze. She was closely associated with the St Ives art movement and drew inspiration from nature, landscape, and the human form. Hepworth became one of the most influential artists of the 20th century, helping to redefine modern sculpture."
+    },
+    {
+        "name": "Georgia O'Keeffe",
+        "birth_year": "1887",
+        "death_year": "1986",
+        "nationality": "American",
+        "biography": "Georgia O’Keeffe was an influential American modernist artist best known for her large-scale flower paintings and dramatic desert landscapes. Her work emphasized abstraction and personal vision, often inspired by the natural forms of New Mexico where she spent much of her life. O’Keeffe played a central role in shaping American modern art and remains one of its most iconic figures."
+    },
+    {
+        "name": "Cindy Sherman",
+        "birth_year": "1954",
+        "death_year": null,
+        "nationality": "American",
+        "biography": "Cindy Sherman is an American contemporary artist renowned for her conceptual self-portraits that explore identity, gender, and representation. Using photography, costumes, and makeup, she transforms herself into a wide range of fictional characters and cultural stereotypes. Sherman’s work has had a major influence on feminist art and contemporary photography."
+    },
+    {
+        "name": "Louise Bourgeois",
+        "birth_year": "1911",
+        "death_year": "2010",
+        "nationality": "French",
+        "biography": "Louise Bourgeois was a French-American artist best known for her powerful sculptures and installations exploring memory, emotion, and the human psyche. Her work often addressed themes of family, sexuality, and trauma, drawing deeply from her personal experiences. Bourgeois is regarded as one of the most influential figures in modern and contemporary art."
+    },
+    {
+        "name": "Jenny Saville",
+        "birth_year": "1970",
+        "death_year": null,
+        "nationality": "British",
+        "biography": "Jenny Saville (born 1970) is a British contemporary painter known for her large-scale figurative works that challenge traditional ideals of beauty and the female body. Her paintings feature raw, expressive depictions of flesh influenced by art history, feminism, and medical imagery. Saville is a leading figure among the Young British Artists and a major force in contemporary figurative painting."
+    }
+]
