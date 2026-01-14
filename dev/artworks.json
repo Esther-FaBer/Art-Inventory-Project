@@ -1,74 +1,98 @@
 [
     {
-      "artist": "Jean-Michel Basquiat",
-      "title": "MP, 1984",
-      "medium": "Acrylic and oilstick on canvas",
-      "creation date": "1984",
-      "dimensions_cm": {"height": "218.5", "width": "172.5", "depth": "5"},
-      "usage": "Temporary Admissions"
+      "artist_name": "Georgia O'Keeffe",
+      "title": "Black Iris VI",
+      "year_created": "1936",
+      "artwork-type": "painting",
+      "medium": "oil on canvas",
+      "price": "525,000.00",
+      "currency": "GBP",
+      "dimensions": {
+        "height": 91.4,
+        "width": 61,
+        "depth": 5,
+        "unit": "cm"},
+      "status": "sold",
+      "vat status": "Bond"
     },
     {
-      "artist": "Elizabeth Peyton",
-      "title": "Spencer (Two Palms), 2002",
-      "medium": "Oil on canvas",
-      "creation date":"2002",
-      "dimensions_cm": {"height": "101.5", "width": "76.2", "depth": "4"},
-      "usage": "Temporary Admissions"
+      "artist_name": "Jenny Saville",
+      "title": "Prop",
+      "year_created": "1993",
+      "artwork-type": "painting",
+      "medium": "oil on canvas",
+      "price": "1,000,000.00",
+      "currency": "GBP",
+      "dimensions": {
+        "height": 213.5,
+        "width": 183,
+        "depth": 4,
+        "unit": "cm"},
+      "status": "available",
+      "vat status": "Temporary Admissions"
     },
     {
-      "artist": "Christopher Wool",
-      "title": "Brown No Halloween, 2005",
-      "medium": "Oil on canvas",
-      "creation date": "2005",
-      "dimensions_cm": {"height": "294.6", "width": "198.1", "depth": "5"},
-      "usage": "Temporary Admissions"
+      "artist_name": "Louise Bourgeois",
+      "title": "Nature Study",
+      "year_created": "1986",
+      "artwork-type": "sculpture",
+      "medium": "Bronze, silver nitrate patina",
+      "price": "120,000.00",
+      "currency": "gbp",
+      "dimensions": {
+        "height": 15.2,
+        "width": 25.4,
+        "depth": 17.8,
+        "unit": "cm"},
+      "status": "available",
+      "vat status": "Free Circulation"
     },
     {
-      "artist": "John Chamberlain",
-      "title": "Etruscan Romance, 1984",
-      "medium": "Painted and chromed steel",
-      "creation date": "1984",
-      "dimensions_cm": {"height": "143.5", "width": "284.2", "depth": "78.5 "},
-      "usage": "Temporary Admissions"
+      "artist_name": "Cindy Sherman",
+      "title": "Untitled A",
+      "year_created": "1975",
+      "artwork-type": "photograph",
+      "medium": "Photograph, gelatin silver print on paper",
+      "price": "20,000.00",
+      "currency": "gbp",
+      "dimensions": {
+        "height": 41.4,
+        "width": 28.3,
+        "depth": 0.5,
+        "unit": "cm"},
+      "status": "available",
+      "vat status": "Temporary Admissions"
     },
     {
-      "artist": "Martha Jungwirth",
-      "title": "Ohne Titel, 1987",
-      "medium": "Oil on canvas",
-      "creation date": "1987",
-      "dimensions_cm": {"height": "71.2", "width": "105.8", "depth": "4"},
-      "usage": "Home Use"
+      "artist_name": "Jenny Saville",
+      "title": "Trace",
+      "year_created": "1993-4",
+      "artwork-type": "painting",
+      "medium": "Oil paint on canvas",
+      "price": "850,000.00",
+      "currency": "gbp",
+      "dimensions": {
+        "height": 221.7,
+        "width": 168,
+        "depth": 45,
+        "unit": "cm"},
+      "status": "available",
+      "vat status": "Temporary Admissions"
     },
     {
-      "artist": "Keith Haring",
-      "title": "Acrobats, 1986",
-      "medium": "Acrylic on canvas",
-      "creation date": "1986",
-      "dimensions_cm": {"height": "61","width": "39.7", "depth": "36.9"},
-      "usage": "Home Use"
-    },
-    {
-      "artist": "Damien Hirst",
-      "title": "Midas Asteroid, 2007",
-      "medium": "Spin painting on canvas",
-      "creation date": "2007",
-      "dimensions_cm": {"height": "182.9","width": "121.9", "depth": "4"},
-      "usage": "Temporary Admissions"
-    },
-    {
-      "artist": "David Salle",
-      "title": "Tree of Life #22",
-      "medium": "Acrylic and oil on canvas",
-      "creation date": "2021",
-      "dimensions_cm": {"height": "118","width": "97", "depth": "4"},
-      "usage": "Temporary Admissions"
-    },
-    {
-      "artist": "Katherine Bernhardt",
-      "title": "Papayas in Oaxaca",
-      "medium": "Acrylic on canvas",
-      "creation date": "2017",
-      "dimensions_cm": {"height": "152.4","width": "182.9", "depth": "6"},
-      "usage": "Home Use"
+      "artist_name": "Georgia O'Keeffe",
+      "title": "Abstraction White Rose",
+      "year_created": "1927",
+      "artwork-type": "painting",
+      "medium": "Oil on canva",
+      "price": "60,000.00",
+      "currency": "gbp",
+      "dimensions": {
+        "height": 91.4,
+        "width": 76.2,
+        "depth": 3,
+        "unit": "cm"},
+      "status": "available",
+      "vat status": "Temporary Admissions"
     }
 ]
