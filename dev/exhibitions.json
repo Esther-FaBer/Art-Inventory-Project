@@ -1,0 +1,20 @@
+[
+    {
+        "exhibition_name": "Jenny Saville: The Anatomy of Painting",
+        "start_date": "2025-06-20",
+        "end_date": "2025-10-20",
+        "description": "Jenny Saville: The Anatomy of Painting brings together 45 works tracing the evolution of the artist’s practice and her engagement with art history. Created in close collaboration with Saville, the exhibition features works from public and private collections worldwide."
+    },
+    {
+        "exhibition_name": "Georgia O'Keeffe",
+        "start_date": "2024-10-20",
+        "end_date": "2025-02-20",
+        "description": "Georgia O’Keeffe presents a focused selection of works spanning the artist’s career, exploring her distinctive vision of nature, abstraction, and place. The exhibition highlights key paintings and drawings, bringing together works from public and private collections."
+    },
+    {
+        "exhibition_name": "Louise Bourgeois",
+        "start_date": "2025-03-01",
+        "end_date": "2025-07-03",
+        "description": "Louise Bourgeois brings together a selection of works spanning the artist’s career, exploring themes of memory, the body, and emotion. The exhibition highlights key sculptures and works on paper from public and private collections."
+    }
+]
