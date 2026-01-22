@@ -1,0 +1,20 @@
+[
+    {
+        "gallery_name": "Burlington Arcade, London",
+        "location": "London",
+        "contact_email": "london@gallery.com",
+        "phone_numer": "+44 208 7788 9900"
+    },
+    {
+        "gallery_name": "MadisonAvenue, New york",
+        "location": "New York",
+        "contact_email": "nyc@gallery.com",
+        "phone_numer": "+1 212 789 9440"
+    },
+    {
+        "gallery_name": "Connaught Central",
+        "location": "Hong Kong",
+        "contact_email": "hk@gallery.com",
+        "phone_numer": "+852 2345 5678"
+    }
+]

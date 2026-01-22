@@ -52,6 +52,15 @@ await db.query(`CREATE TABLE contacts(
 await db.query(`CREATE TABLE roles(
     id SERIAL PRIMARY KEY,
     role_name VARCHAR(50) NOT NULL
-);`)
+);`);
+
+//create galleries table
+await db.query(`CREATE TABLE galleries(
+    gallery_id SERIAL PRIMARY KEY,
+    gallery_name VARCHAR(20),
+    location VARCHAR(50),
+    contact_email VARCHAR(50),
+    phone_number VARCHAR(50)
+    );`);
 
 }
