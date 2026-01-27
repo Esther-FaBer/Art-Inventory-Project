@@ -1,4 +1,9 @@
-async function seed(artist, artworks) {
+const db = require("./connection");
+const format = require("pg-format");
+const dropTables = require("./drops");
+
+
+async function seed(artist, galleries, roles, contacts, artworks, exhibitions, artwork_exhibitions, contact_roles) {
 
 //drop existing tables
     await dropTables();
@@ -71,7 +76,7 @@ await db.query(`CREATE TABLE artwork_exhibitions(
     );`);
 
 //create join table contacts - roles
-await db.query(`CREATE TABLE contact_roles (
+await db.query(`CREATE TABLE contact_roles(
     contact_id INT REFERENCES contacts(contact_id) ON DELETE CASCADE,
     role_id INT REFERENCES roles(role_id ON DELETE CASCADE,
     PRIMARY KEY (contact_id, role_id)
