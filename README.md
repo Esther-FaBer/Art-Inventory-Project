@@ -24,5 +24,5 @@ Create a `.env.dev` file at the root level with the following content:
 PGDATABASE=inventory_dev
 ///
 
-## Seeding 
+
 
