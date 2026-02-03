@@ -8,5 +8,5 @@ exports.getGalleries = async (req, res, next) => {
         return res.status(200).send({galleries: [] });
     }
 
-    return res.status(200).send ({ galleries });
+    return res.status(200).send({ galleries });
 }
