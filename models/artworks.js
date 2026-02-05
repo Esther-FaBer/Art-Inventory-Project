@@ -20,7 +20,6 @@ exports.fetchArtworks = async () => {
 };
 
 //get artwork by ID
-
 exports.fetchArtworkbyID = async (artworkId) => {
     try {
         const { rows: artworks } = await db.query(
@@ -37,4 +36,31 @@ exports.fetchArtworkbyID = async (artworkId) => {
         console.log('Error fetching artwork', error);
         throw error;
     }
-}
+};
+
+//create a new artwork
+exports.createArtwork = async (artworkData) => {
+    const { 
+        artist_id, title, year_created, artwork_type, 
+        medium, description, price, status, vat_status, edition 
+    } = artworkData;
+
+    try {
+        const { rows: artworks } = await db.query(
+            `INSERT INTO artworks (
+                artist_id, title, year_created, artwork_type, 
+                medium, description, price, status, vat_status, edition
+             )
+             VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)
+             RETURNING *`,
+            [artist_id, title, year_created, artwork_type, 
+             medium, description, price, status, vat_status, edition]
+        );
+        return artworks[0];
+
+    } catch (error) {
+        console.error('Error creating artwork:', error);
+        throw error;
+    }
+};
+
