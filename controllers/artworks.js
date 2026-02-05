@@ -1,10 +1,10 @@
 const { fetchArtworks} =  require("../models/artworks");
 
 exports.getArtworks = async (req, res, next) => {
-
-    const artworks = await fetchArtworks();
     try {
-        if(!artworks ||!artworks.length) {
+        const artworks = await fetchArtworks();
+    
+        if(!artworks || !artworks.length) {
             return res.status(200).send({artworks: [] });
         }
 
@@ -12,4 +12,5 @@ exports.getArtworks = async (req, res, next) => {
 
     } catch (error) {
         next(error); // pass the error to the errors file
-}}
+}
+}
