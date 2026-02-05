@@ -105,9 +105,29 @@ exports.deleteArtwork = async (artworkId) => {
              RETURNING *`,
             [artworkId]
         );
-        return artwork[0];
+        return artworks[0];
     } catch (error) {
         console.error('Error deleting artwork:', error);
+        throw error;
+    }
+};
+
+// get artworks by artist
+exports.fetchArtworksByArtist = async (artistId) => {
+    try {
+        const { rows: artworks } = await db.query(
+            `SELECT 
+                artwork_id, artist_id, title, year_created, 
+                artwork_type, medium, description, price, 
+                status, vat_status, edition
+             FROM artworks
+             WHERE artist_id = $1
+             ORDER BY year_created DESC`,
+            [artistId]
+        );
+        return artworks;
+    } catch (error) {
+        console.error('Error fetching artworks by artist:', error);
         throw error;
     }
 };
