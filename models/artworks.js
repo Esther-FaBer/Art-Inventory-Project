@@ -64,3 +64,50 @@ exports.createArtwork = async (artworkData) => {
     }
 };
 
+//update pre-existing artwork
+exports.updateArtwork = async (artworkId, artworkData) => {
+    const { 
+        artist_id, title, year_created, artwork_type, 
+        medium, description, price, status, vat_status, edition 
+    } = artworkData;
+    
+    try {
+        const { rows: artworks } = await db.query(
+            `UPDATE artworks
+             SET artist_id = $1, 
+                 title = $2, 
+                 year_created = $3, 
+                 artwork_type = $4, 
+                 medium = $5, 
+                 description = $6, 
+                 price = $7, 
+                 status = $8, 
+                 vat_status = $9, 
+                 edition = $10
+             WHERE artwork_id = $11
+             RETURNING *`,
+            [artist_id, title, year_created, artwork_type, 
+             medium, description, price, status, vat_status, edition, artworkId]
+        );
+        return artworks[0];
+    } catch (error) {
+        console.error('Error updating artwork:', error);
+        throw error;
+    }
+};
+
+// delete artwork
+exports.deleteArtwork = async (artworkId) => {
+    try {
+        const { rows: artworks } = await db.query(
+            `DELETE FROM artworks 
+             WHERE artwork_id = $1 
+             RETURNING *`,
+            [artworkId]
+        );
+        return artwork[0];
+    } catch (error) {
+        console.error('Error deleting artwork:', error);
+        throw error;
+    }
+};
