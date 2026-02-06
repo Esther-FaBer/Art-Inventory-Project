@@ -1,6 +1,6 @@
-# Art Inventory
+# Art Inventory Backend
 
-This repository contains the source code for a RESTful backend server designed to manage an art inventory system.
+This is a Node.js backend application for managing art inventory, including artists, artworks, galleries, exhibitions, contacts, and roles.
 
 The server is built with Node.js and Express, and it interacts with a PostgreSQL database for storing and retrieving artwork-related data.
 
