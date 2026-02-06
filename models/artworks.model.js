@@ -1,7 +1,7 @@
 const db = require("../db/connection");
 
 
-//get all artworks
+// get all artworks
 exports.fetchArtworks = async () => {
     try {
         const {rows: artworks } = await db.query(
@@ -19,7 +19,7 @@ exports.fetchArtworks = async () => {
     }
 };
 
-//get artwork by ID
+// get artwork by ID
 exports.fetchArtworkbyID = async (artworkId) => {
     try {
         const { rows: artworks } = await db.query(
@@ -64,7 +64,7 @@ exports.createArtwork = async (artworkData) => {
     }
 };
 
-//update pre-existing artwork
+// update pre-existing artwork
 exports.updateArtwork = async (artworkId, artworkData) => {
     const { 
         artist_id, title, year_created, artwork_type, 
@@ -128,6 +128,47 @@ exports.fetchArtworksByArtist = async (artistId) => {
         return artworks;
     } catch (error) {
         console.error('Error fetching artworks by artist:', error);
+        throw error;
+    }
+};
+
+// get artworks by artist
+exports.fetchArtworksByArtist = async (artistId) => {
+    try {
+        const { rows: artworks } = await db.query(
+            `SELECT 
+                artwork_id, artist_id, title, year_created, 
+                artwork_type, medium, description, price, 
+                status, vat_status, edition
+             FROM artworks
+             WHERE artist_id = $1
+             ORDER BY year_created DESC`,
+            [artistId]
+        );
+        return artworks;
+    } catch (error) {
+        console.error('Error fetching artworks by artist:', error);
+        throw error;
+    }
+};
+
+// search artworks
+exports.searchArtworks = async (searchTerm) => {
+    try {
+        const { rows: artworks } = await db.query(
+            `SELECT artwork_id, artist_id, title, year_created, artwork_type, 
+                medium, description, price, status, vat_status, edition, artist_name
+             FROM artworks a
+             LEFT JOIN artists ar ON a.artist_id = ar.artist_id
+             WHERE a.title ILIKE $1 
+                OR a.description ILIKE $1 
+                OR ar.artist_name ILIKE $1
+             ORDER BY a.artwork_id DESC`,
+            [`%${searchTerm}%`]
+        );
+        return artworks;
+    } catch (error) {
+        console.error('Error searching artworks:', error);
         throw error;
     }
 };
