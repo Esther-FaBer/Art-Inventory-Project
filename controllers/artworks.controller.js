@@ -1,4 +1,4 @@
-const { fetchArtworks} =  require("../models/artworks.model");
+const { fetchArtworks } =  require("../models/artworks.model");
 
 exports.getArtworks = async (req, res, next) => {
     try {

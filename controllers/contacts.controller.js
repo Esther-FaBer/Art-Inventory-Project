@@ -1,4 +1,4 @@
-const { fetchContacts } =  require("../models/contacts");
+const { fetchContacts } =  require("../models/contacts.model");
 
 exports.getContacts = async (req, res, next) => {
 

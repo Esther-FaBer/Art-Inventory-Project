@@ -1,4 +1,4 @@
-const { fetchGalleries} =  require("../models/galleries");
+const { fetchGalleries} =  require("../models/galleries.model");
 
 exports.getGalleries = async (req, res, next) => {
 
