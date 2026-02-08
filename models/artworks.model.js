@@ -20,7 +20,7 @@ exports.fetchArtworks = async () => {
 };
 
 // get artwork by ID
-exports.fetchArtworkbyID = async (artworkId) => {
+exports.fetchArtworkById = async (artworkId) => {
     try {
         const { rows: artworks } = await db.query(
             `SELECT artwork_id, artist_id, title, year_created, 
