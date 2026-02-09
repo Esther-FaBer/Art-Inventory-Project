@@ -24,3 +24,17 @@ exports.fetchArtistById = async (artistId) => {
     
     return artists[0]; // Returns undefined if not found
 };
+
+//create a new artist
+exports.insertArtist = async (artistData) => {
+    const { artist_name, birth_year, death_year, nationality, biography } = artistData;
+    
+    const { rows: artists } = await db.query(
+        `INSERT INTO artists (artist_name, birth_year, death_year, nationality, biography)
+         VALUES ($1, $2, $3, $4, $5)
+         RETURNING *`,
+        [artist_name, birth_year, death_year, nationality, biography]
+    );
+    
+    return artists[0];
+};

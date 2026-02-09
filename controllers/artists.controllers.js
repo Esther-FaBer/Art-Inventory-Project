@@ -1,4 +1,4 @@
-const { fetchArtists } =  require("../models/artists.models");
+const { fetchArtists, fetchArtistById, insertArtist,   } =  require("../models/artists.models");
 
 exports.getArtists = async (req, res, next) => {
 
