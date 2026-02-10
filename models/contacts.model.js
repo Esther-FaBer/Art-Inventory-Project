@@ -53,3 +53,15 @@ exports.createContact = async (contactData) => {
         throw error;
     }
 };
+
+// delete contact
+exports.deleteContact = async (contactId) => {
+    const { rows: contacts } = await db.query(
+        `DELETE FROM contacts
+         WHERE contact_id = $1
+         RETURNING *`,
+        [contactId]
+    );
+    
+    return contacts[0];
+};
