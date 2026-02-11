@@ -88,3 +88,17 @@ exports.fetchContactsByType = async (contactType) => {
     
     return contacts;
 };
+
+// fetch contacts by city
+exports.fetchContactsByCity = async (city) => {
+    const { rows: contacts } = await db.query(
+        `SELECT contact_id, contact_type, contact_name, email, 
+                phone_number, address, city, country, notes
+         FROM contacts
+         WHERE city ILIKE $1
+         ORDER BY contact_name ASC`,
+        [city]
+    );
+    
+    return contacts;
+};
