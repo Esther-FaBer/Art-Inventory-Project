@@ -1,9 +1,7 @@
 const db = require("../db/connection");
 
+// fetch all contacts
 exports.fetchContacts = async () => {
-
-    try{
-
         const { rows: contacts } = await db.query(
             `SELECT contact_id, contact_type, contact_name,
                 email, phone_number, notes
@@ -11,16 +9,11 @@ exports.fetchContacts = async () => {
             ORDER BY contact_name ASC`);
     
         return contacts;
+        };
 
-        } catch(error) {
-            console.log("Error fetching contacts", error);
-            throw error;
-        }
-};
 
 // fetch single contact by Id
 exports.fetchContactById = async (contactId) => {
-    try {
         const { rows: contacts } = await db.query(
             `SELECT contact_id, contact_type, contact_name,
                     email, phone_number, notes
@@ -29,18 +22,13 @@ exports.fetchContactById = async (contactId) => {
             [contactId]
         );
         return contacts[0]; // return first result or undefined
-    } catch (error) {
-        console.error('Error fetching contact:', error);
-        throw error;
-    }
-};
+    };
 
 
 //create a new contact
 exports.createContact = async (contactData) => {
     const { contact_type, contact_name, email, phone_number, notes } = contactData;
     
-    try {
         const { rows: contacts } = await db.query(
             `INSERT INTO contacts (contact_type, contact_name, email, phone_number, notes)
              VALUES ($1, $2, $3, $4, $5)
@@ -48,11 +36,34 @@ exports.createContact = async (contactData) => {
             [contact_type, contact_name, email, phone_number, notes]
         );
         return contacts[0];
-    } catch (error) {
-        console.error('Error creating contact:', error);
-        throw error;
-    }
+    };
+ 
+// update contact
+exports.updateContact = async (contactId, contactData) => {
+    const { 
+        contact_type, contact_name, email, phone_number, 
+        address, city, country, notes 
+    } = contactData;
+    
+    const { rows: contacts } = await db.query(
+        `UPDATE contacts
+         SET contact_type = $1,
+             contact_name = $2,
+             email = $3,
+             phone_number = $4,
+             address = $5,
+             city = $6,
+             country = $7,
+             notes = $8
+         WHERE contact_id = $9
+         RETURNING *`,
+        [contact_type, contact_name, email, phone_number, address, city, country, notes, contactId]
+    );
+    
+    return contacts[0];
 };
+
+
 
 // delete contact
 exports.deleteContact = async (contactId) => {

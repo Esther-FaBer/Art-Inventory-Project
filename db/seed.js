@@ -22,9 +22,15 @@ await db.query(`CREATE TABLE artists(
 await db.query(`CREATE TABLE galleries(
     gallery_id SERIAL PRIMARY KEY,
     gallery_name VARCHAR(255),
-    location VARCHAR(255),
+    address VARCHAR(255),
+    city VARCHAR(100),
+    country VARCHAR(100),
     contact_email VARCHAR(100),
     phone_number VARCHAR(50)
+    website VARCHAR(255),
+    description TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
     );`);
 
 //create roles table
@@ -40,7 +46,12 @@ await db.query(`CREATE TABLE contacts(
     contact_name VARCHAR(255) NOT NULL,
     email VARCHAR(100),
     phone_number VARCHAR(50),
-    notes TEXT
+    address VARCHAR(255),
+    city VARCHAR(100),
+    country VARCHAR(100),
+    notes TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
     );`);
 
 //create artworks table
