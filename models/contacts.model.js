@@ -21,7 +21,7 @@ exports.fetchContactById = async (contactId) => {
              WHERE contact_id = $1`,
             [contactId]
         );
-        return contacts[0]; // return first result or undefined
+        return contacts[0];
     };
 
 
@@ -63,8 +63,6 @@ exports.updateContact = async (contactId, contactData) => {
     return contacts[0];
 };
 
-
-
 // delete contact
 exports.deleteContact = async (contactId) => {
     const { rows: contacts } = await db.query(
@@ -75,4 +73,18 @@ exports.deleteContact = async (contactId) => {
     );
     
     return contacts[0];
+};
+
+// fetch contacts by type
+exports.fetchContactsByType = async (contactType) => {
+    const { rows: contacts } = await db.query(
+        `SELECT contact_id, contact_type, contact_name, email, 
+                phone_number, address, city, country, notes
+         FROM contacts
+         WHERE contact_type = $1
+         ORDER BY contact_name ASC`,
+        [contactType]
+    );
+    
+    return contacts;
 };
