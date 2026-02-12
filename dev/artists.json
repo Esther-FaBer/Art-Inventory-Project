@@ -7,6 +7,27 @@
         "biography": "Barbara Hepworth was a pioneering British sculptor known for her modernist abstract works in stone, wood, and bronze. She was closely associated with the St Ives art movement and drew inspiration from nature, landscape, and the human form. Hepworth became one of the most influential artists of the 20th century, helping to redefine modern sculpture."
     },
     {
+        "artist_name": "Yayoi Kusama",
+        "birth_year": "1929",
+        "death_year": null,
+        "nationality": "Japanese",
+        "biography": "Yayoi Kusama is a Japanese contemporary artist whose work spans painting, sculpture, performance, and immersive installation. Best known for her signature polka dots and infinity mirror rooms, Kusama began her career in New York during the 1960s avant-garde scene. Her deeply personal art, influenced by hallucinations she has experienced since childhood, has made her one of the most celebrated and recognisable artists alive today."
+    },
+    {
+        "artist_name": "Frida Kahlo",
+        "birth_year": "1907",
+        "death_year": "1954",
+        "nationality": "Mexican",
+        "biography": "Frida Kahlo was a Mexican painter celebrated for her deeply autobiographical works that explore identity, postcolonialism, gender, class, and race. After surviving a near-fatal bus accident at age 18, Kahlo began painting from her bed, producing iconic self-portraits infused with symbolism drawn from Mexican folk art and indigenous culture. She remains a global icon of resilience, feminism, and artistic defiance."
+    },
+    {
+        "artist_name": "Jean-Michel Basquiat",
+        "birth_year": "1960",
+        "death_year": "1988",
+        "nationality": "American",
+        "biography": "Jean-Michel Basquiat was an American artist who rose from the New York graffiti underground to become one of the most celebrated figures in contemporary art. His neo-expressionist paintings, rich in text, symbols, and raw gestural marks, explored themes of race, identity, colonialism, and capitalism. Despite his tragically short career, Basquiat fundamentally changed the landscape of modern art and remains one of its most valuable and influential voices."
+    },
+    {
         "artist_name": "Georgia O'Keeffe",
         "birth_year": "1887",
         "death_year": "1986",
@@ -33,5 +54,89 @@
         "death_year": null,
         "nationality": "British",
         "biography": "Jenny Saville is a British contemporary painter known for her large-scale figurative works that challenge traditional ideals of beauty and the female body. Her paintings feature raw, expressive depictions of flesh influenced by art history, feminism, and medical imagery. Saville is a leading figure among the Young British Artists and a major force in contemporary figurative painting."
+    },
+     {
+        "artist_name": "David Hockney",
+        "birth_year": "1937",
+        "death_year": null,
+        "nationality": "British",
+        "biography": "David Hockney is one of the most influential British artists of the 20th and 21st centuries, known for his vibrant paintings of swimming pools, portraits, and landscapes. Born in Bradford, Hockney studied at the Royal College of Art before settling in Los Angeles, where the California light and lifestyle became central to his work. He has consistently reinvented his practice, embracing new technologies including photography, fax machines, and the iPad as artistic tools."
+    },
+    {
+        "artist_name": "Katsushika Hokusai",
+        "birth_year": "1760",
+        "death_year": "1849",
+        "nationality": "Japanese",
+        "biography": "Katsushika Hokusai was a Japanese ukiyo-e painter and printmaker of the Edo period. His most famous work, The Great Wave off Kanagawa, is one of the most widely recognised and reproduced images in the history of art. Hokusai produced over 30,000 works during his long career and had a profound influence on Western Impressionist and Post-Impressionist artists including Monet, Van Gogh, and Degas. He reportedly began his greatest artistic output after the age of 60."
+    },
+    {
+        "artist_name": "Zanele Muholi",
+        "birth_year": "1972",
+        "death_year": null,
+        "nationality": "South African",
+        "biography": "Zanele Muholi is a South African visual activist and photographer whose work documents and celebrates the lives of Black LGBTQIA+ people in South Africa and beyond. Through portraiture and self-portraiture, Muholi challenges racist, homophobic, and patriarchal structures while creating a powerful archive of queer identity and resistance. Their monumental self-portrait series Somnyama Ngonyama has been exhibited globally and is held in major museum collections worldwide."
+    },
+    {
+        "artist_name": "Francis Bacon",
+        "birth_year": "1909",
+        "death_year": "1992",
+        "nationality": "Irish-British",
+        "biography": "Francis Bacon was an Irish-born British figurative painter known for his raw, emotionally charged imagery. His work is characterised by bold, gestural brushwork and distorted human figures, often depicted in isolated, claustrophobic settings. Bacon drew inspiration from old masters, photography, and the human condition, producing some of the most psychologically intense paintings of the 20th century. He is widely regarded as one of the greatest painters of the postwar era."
+    },
+    {
+        "artist_name": "Ai Weiwei",
+        "birth_year": "1957",
+        "death_year": null,
+        "nationality": "Chinese",
+        "biography": "Ai Weiwei is a Chinese contemporary artist and activist whose work spans sculpture, installation, photography, film, and architecture. Internationally known for large-scale provocative installations such as Sunflower Seeds at Tate Modern, Ai uses art as a vehicle for political commentary, challenging authoritarianism, human rights abuses, and censorship. His outspoken criticism of the Chinese government led to his detention in 2011 and remains central to his international profile and artistic mission."
+    },
+    {
+        "artist_name": "Alma Thomas",
+        "birth_year": "1891",
+        "death_year": "1978",
+        "nationality": "American",
+        "biography": "Alma Thomas was an American abstract painter who became the first Black woman to have a solo exhibition at the Whitney Museum of American Art in 1972. Known for her vibrant, mosaic-like patterns of colour inspired by nature and the cosmos, Thomas developed her signature style in her 70s after retiring from a long career as an art teacher. Her joyful and luminous canvases have secured her place as a pioneering figure in the Washington Colour School movement."
+    },
+    {
+        "artist_name": "Lynette Yiadom-Boakye",
+        "birth_year": "1977",
+        "death_year": null,
+        "nationality": "British-Ghanaian",
+        "biography": "Lynette Yiadom-Boakye is a British-Ghanaian painter and writer known for her enigmatic figurative paintings of invented Black subjects. Working rapidly and often completing a canvas in a single session, she creates imagined individuals whose psychological depth and quiet presence challenge the historical exclusion of Black figures from Western portraiture. Yiadom-Boakye was shortlisted for the Turner Prize in 2013 and her work is held in major collections worldwide."
+    },
+    {
+        "artist_name": "Pablo Picasso",
+        "birth_year": "1881",
+        "death_year": "1973",
+        "nationality": "Spanish",
+        "biography": "Pablo Picasso was a Spanish painter, sculptor, printmaker, ceramicist, and stage designer who co-founded Cubism alongside Georges Braque. One of the most influential artists of the 20th century, Picasso's prolific output across numerous styles and media fundamentally reshaped Western art. Works such as Les Demoiselles d'Avignon and Guernica remain among the most studied and discussed paintings in art history. He is often cited as the defining figure of Modernism."
+    },
+    {
+        "artist_name": "Cecily Brown",
+        "birth_year": "1969",
+        "death_year": null,
+        "nationality": "British",
+        "biography": "Cecily Brown is a British painter known for her gestural, sensuous canvases that merge figuration and abstraction. Influenced by the Old Masters, the New York School, and Pop Art, Brown's dense, layered paintings oscillate between legibility and dissolution, often depicting bodies, desire, and psychological tension. Since moving to New York in the 1990s, she has become one of the most celebrated painters of her generation, with work held in major international collections."
+    },
+    {
+        "artist_name": "El Anatsui",
+        "birth_year": "1944",
+        "death_year": null,
+        "nationality": "Ghanaian",
+        "biography": "El Anatsui is a Ghanaian sculptor internationally acclaimed for his large-scale installations made from recycled bottle caps, cassava graters, and other discarded materials. His shimmering, tapestry-like works draw on West African textile traditions while addressing histories of colonialism, trade, and consumption. Anatsui has exhibited widely across Africa, Europe, and the Americas, and is considered one of the most important and original artists working in contemporary sculpture today."
+    },
+    {
+        "artist_name": "Lee Krasner",
+        "birth_year": "1908",
+        "death_year": "1984",
+        "nationality": "American",
+        "biography": "Lee Krasner was an American abstract expressionist painter who was a central figure in the New York art scene of the mid-20th century. Often overshadowed during her lifetime by her husband Jackson Pollock, Krasner was an innovative and rigorous artist in her own right, developing a powerful body of work marked by bold colour, fragmented forms, and emotional intensity. Recognition of her full contribution to Abstract Expressionism has grown significantly since her death."
+    },
+    {
+        "artist_name": "Kerry James Marshall",
+        "birth_year": "1955",
+        "death_year": null,
+        "nationality": "American",
+        "biography": "Kerry James Marshall is an American painter whose monumental figurative works centre the Black experience within the Western art historical tradition. Working with richly dark pigments to depict Black figures with dignity, joy, and complexity, Marshall creates works that deliberately intervene in a canon that has historically excluded or marginalised Black subjects. He is widely regarded as one of the most significant painters working today and his works have achieved landmark prices at auction."
     }
 ]
