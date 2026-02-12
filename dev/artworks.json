@@ -3,9 +3,9 @@
       "artist_name": "Georgia O'Keeffe",
       "title": "Black Iris VI",
       "year_created": "1936",
-      "artwork-type": "painting",
+      "artwork_type": "painting",
       "medium": "oil on canvas",
-      "price": "525,000.00",
+      "price": 525000.00,
       "currency": "GBP",
       "dimensions": {
         "height": 91.4,
@@ -14,15 +14,15 @@
         "unit": "cm"
       },
       "status": "sold",
-      "vat status": "Bond"
+      "vat_status": "Bond"
     },
     {
       "artist_name": "Jenny Saville",
       "title": "Prop",
       "year_created": "1993",
-      "artwork-type": "painting",
+      "artwork_type": "painting",
       "medium": "oil on canvas",
-      "price": "1,000,000.00",
+      "price": 1000000.00,
       "currency": "GBP",
       "dimensions": {
         "height": 213.5,
@@ -31,16 +31,16 @@
         "unit": "cm"
       },
       "status": "available",
-      "vat status": "Temporary Admissions"
+      "vat_status": "Temporary Admissions"
     },
     {
       "artist_name": "Louise Bourgeois",
       "title": "Nature Study",
       "year_created": "1986",
-      "artwork-type": "sculpture",
+      "artwork_type": "sculpture",
       "medium": "Bronze, silver nitrate patina",
-      "price": "120,000.00",
-      "currency": "gbp",
+      "price": 120000.00,
+      "currency": "GBP",
       "dimensions": {
         "height": 15.2,
         "width": 25.4,
@@ -48,16 +48,16 @@
         "unit": "cm"
       },
       "status": "available",
-      "vat status": "Free Circulation"
+      "vat_status": "Free Circulation"
     },
     {
       "artist_name": "Cindy Sherman",
       "title": "Untitled A",
       "year_created": "1975",
-      "artwork-type": "photograph",
+      "artwork_type": "photograph",
       "medium": "Photograph, gelatin silver print on paper",
-      "price": "20,000.00",
-      "currency": "gbp",
+      "price": 20000.00,
+      "currency": "GBP",
       "dimensions": {
         "height": 41.4,
         "width": 28.3,
@@ -65,16 +65,16 @@
         "unit": "cm"
       },
       "status": "available",
-      "vat status": "Temporary Admissions"
+      "vat_status": "Temporary Admissions"
     },
     {
       "artist_name": "Jenny Saville",
       "title": "Trace",
       "year_created": "1993-4",
-      "artwork-type": "painting",
-      "medium": "Oil paint on canvas",
-      "price": "850,000.00",
-      "currency": "gbp",
+      "artwork_type": "painting",
+      "medium": "oil on canvas",
+      "price": 850000.00,
+      "currency": "GBP",
       "dimensions": {
         "height": 221.7,
         "width": 168,
@@ -82,16 +82,16 @@
         "unit": "cm"
       },
       "status": "available",
-      "vat status": "Temporary Admissions"
+      "vat_status": "Temporary Admissions"
     },
     {
       "artist_name": "Georgia O'Keeffe",
       "title": "Abstraction White Rose",
       "year_created": "1927",
-      "artwork-type": "painting",
-      "medium": "Oil on canva",
-      "price": "60,000.00",
-      "currency": "gbp",
+     "artwork_type": "painting",
+      "medium": "oil on canvas",
+      "price": 60000.00,
+      "currency": "GBP",
       "dimensions": {
         "height": 91.4,
         "width": 76.2,
@@ -99,15 +99,15 @@
         "unit": "cm"
       },
       "status": "available",
-      "vat status": "Temporary Admissions"
+      "vat_status": "Temporary Admissions"
     },
     {
         "artist_name": "Frida Kahlo",
         "title": "Self-Portrait with Thorn Necklace and Hummingbird",
         "year_created": "1940",
         "artwork_type": "painting",
-        "medium": "Oil on canvas",
-        "price": "1,200,000.00",
+        "medium": "oil on canvas",
+        "price": 1200000.00,
         "currency": "GBP",
         "dimensions": {
             "height": 47.3,
@@ -124,7 +124,7 @@
         "year_created": "1981",
         "artwork_type": "painting",
         "medium": "Acrylic and mixed media on canvas",
-        "price": "2,500,000.00",
+        "price": 2500000.00,
         "currency": "GBP",
         "dimensions": {
             "height": 205.7,
@@ -141,7 +141,7 @@
         "year_created": "2008",
         "artwork_type": "painting",
         "medium": "Acrylic on canvas",
-        "price": "380,000.00",
+        "price": 380000.00,
         "currency": "GBP",
         "dimensions": {
             "height": 162,
@@ -158,7 +158,7 @@
         "year_created": "1997",
         "artwork_type": "sculpture",
         "medium": "Steel and mixed media",
-        "price": "3,200,000.00",
+        "price": 3200000.00,
         "currency": "GBP",
         "dimensions": {
             "height": 444.5,
@@ -175,7 +175,7 @@
         "year_created": "1967",
         "artwork_type": "painting",
         "medium": "Acrylic on canvas",
-        "price": "4,500,000.00",
+        "price": 4500000.00,
         "currency": "GBP",
         "dimensions": {
             "height": 242.5,
@@ -192,7 +192,7 @@
         "year_created": "1944",
         "artwork_type": "painting",
         "medium": "Oil and pastel on hardboard",
-        "price": "5,800,000.00",
+        "price": 580000.00,
         "currency": "GBP",
         "dimensions": {
             "height": 94,
@@ -209,7 +209,7 @@
         "year_created": "2015",
         "artwork_type": "photograph",
         "medium": "Gelatin silver print",
-        "price": "18,000.00",
+        "price": 18000.00,
         "currency": "GBP",
         "dimensions": {
             "height": 100,
@@ -225,8 +225,8 @@
         "title": "Birch Forest",
         "year_created": "1903",
         "artwork_type": "painting",
-        "medium": "Oil on canvas",
-        "price": "890,000.00",
+        "medium": "oil on canvas",
+        "price": 890000.00,
         "currency": "GBP",
         "dimensions": {
             "height": 110,
@@ -243,7 +243,7 @@
         "year_created": "2010",
         "artwork_type": "installation",
         "medium": "Porcelain",
-        "price": "750,000.00",
+        "price": 750000.00,
         "currency": "GBP",
         "dimensions": {
             "height": 10,
@@ -260,7 +260,7 @@
         "year_created": "1943",
         "artwork_type": "sculpture",
         "medium": "Plaster with colour",
-        "price": "210,000.00",
+        "price": 210000.00,
         "currency": "GBP",
         "dimensions": {
             "height": 29.2,
@@ -277,7 +277,7 @@
         "year_created": "2009",
         "artwork_type": "painting",
         "medium": "Acrylic on PVC",
-        "price": "1,850,000.00",
+        "price": 1850000.00,
         "currency": "GBP",
         "dimensions": {
             "height": 182.9,
@@ -293,8 +293,8 @@
         "title": "The Seasons",
         "year_created": "1957",
         "artwork_type": "painting",
-        "medium": "Oil on canvas",
-        "price": "420,000.00",
+        "medium": "oil on canvas",
+        "price": 420000.00,
         "currency": "GBP",
         "dimensions": {
             "height": 235.9,
@@ -310,8 +310,8 @@
         "title": "Weeping Woman",
         "year_created": "1937",
         "artwork_type": "painting",
-        "medium": "Oil on canvas",
-        "price": "6,200,000.00",
+        "medium": "oil on canvas",
+        "price": 6200000.00,
         "currency": "GBP",
         "dimensions": {
             "height": 60.8,
@@ -328,7 +328,7 @@
         "year_created": "1966",
         "artwork_type": "painting",
         "medium": "Acrylic on canvas",
-        "price": "195,000.00",
+        "price": 195000.00,
         "currency": "GBP",
         "dimensions": {
             "height": 153.7,
@@ -345,7 +345,7 @@
         "year_created": "2007",
         "artwork_type": "installation",
         "medium": "Aluminium and copper wire",
-        "price": "540,000.00",
+        "price": 540000.00,
         "currency": "GBP",
         "dimensions": {
             "height": 490,
@@ -361,8 +361,8 @@
         "title": "The Fugitive Kind",
         "year_created": "2000",
         "artwork_type": "painting",
-        "medium": "Oil on linen",
-        "price": "680,000.00",
+        "medium": "oil on linen",
+        "price": 680000.00,
         "currency": "GBP",
         "dimensions": {
             "height": 274.3,
@@ -379,7 +379,7 @@
         "year_created": "2011",
         "artwork_type": "painting",
         "medium": "Oil on canvas",
-        "price": "320,000.00",
+        "price": 320000.00,
         "currency": "GBP",
         "dimensions": {
             "height": 200,
@@ -391,29 +391,12 @@
         "vat_status": "Free Circulation"
     },
     {
-        "artist_name": "Artemisia Gentileschi",
-        "title": "Judith Slaying Holofernes",
-        "year_created": "1612",
-        "artwork_type": "painting",
-        "medium": "Oil on canvas",
-        "price": "9,500,000.00",
-        "currency": "GBP",
-        "dimensions": {
-            "height": 158.8,
-            "width": 125.5,
-            "depth": 5,
-            "unit": "cm"
-        },
-        "status": "sold",
-        "vat_status": "Bond"
-    },
-    {
         "artist_name": "Katsushika Hokusai",
         "title": "The Great Wave off Kanagawa",
         "year_created": "1831",
         "artwork_type": "print",
         "medium": "Woodblock print, ink and colour on paper",
-        "price": "1,600,000.00",
+        "price": 1600000.00,
         "currency": "GBP",
         "dimensions": {
             "height": 25.7,
@@ -430,7 +413,7 @@
         "year_created": "2015",
         "artwork_type": "photograph",
         "medium": "Inkjet print on cotton rag paper",
-        "price": "22,000.00",
+        "price": 22000.00,
         "currency": "GBP",
         "dimensions": {
             "height": 150,

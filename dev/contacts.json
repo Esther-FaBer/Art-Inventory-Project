@@ -2,43 +2,48 @@
     {
         "contact_name": "John Smith",
         "email": "johnsmith@gmail.com",
+        "country_code": "+44",
         "phone_number": "01234563639",
-        "role": "collector"
+        "contact_type": "collector"
     },
     {
         "contact_name": "Andrew White",
         "email": "awhite@hotmail.com",
+        "country_code": "+44",
         "phone_number": "0323226566",
-        "role": "collector"
+        "contact_type": "collector"
     },
     {
         "contact_name": "Susan Boss",
         "email": "sboss@yahoo.com",
+        "country_code": "+44",
         "phone_number": "0208536390",
-        "role": "institution"
+        "contact_type": "institution"
     },
     {
         "contact_name": "Sarah Thomas",
         "email": "sthomas@gmail.com",
+        "country_code": "+44",
         "phone_number": "07584236963",
-        "role": "Dealer"
+        "contact_type": "dealer"
     },
     {
-        "name": "Carmen del Rey",
+        "contact_name": "Carmen del Rey",
         "email": "cdelrey@mac.com",
-        "phone_number": " 06235548548",
-        "role": "collector"
+        "phone_number": "06235548548",
+        "contact_type": "collector"
     },
     {
         "contact_name": "Noah Back",
         "email": "nback@mac.com",
         "phone_number": "0208653653",
-        "role": "collector"
+        "contact_type": "collector"
     },
     {
         "contact_name": "Roberto Perez",
         "email": "Perez65@gmail.com",
+        "country_code": "+34",
         "phone_number": "08989053653",
-        "role": "collector"
+        "contact_type": "collector"
     }
 ]
