@@ -45,6 +45,7 @@ await db.query(`CREATE TABLE contacts(
     contact_type VARCHAR(50),
     contact_name VARCHAR(255) NOT NULL,
     email VARCHAR(100),
+    country_code VARCHAR(5),
     phone_number VARCHAR(50),
     address VARCHAR(255),
     city VARCHAR(100),

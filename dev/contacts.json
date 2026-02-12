@@ -45,5 +45,145 @@
         "country_code": "+34",
         "phone_number": "08989053653",
         "contact_type": "collector"
+    },
+    {
+        "contact_name": "Isabella Thornton",
+        "email": "i.thornton@artadvisors.co.uk",
+        "country_code": "+44",
+        "phone_number": "7712345678",
+        "contact_type": "collector"
+    },
+    {
+        "contact_name": "Marcus Webb",
+        "email": "mwebb@webbfineart.com",
+        "country_code": "+44",
+        "phone_number": "2071234567",
+        "contact_type": "dealer"
+    },
+    {
+        "contact_name": "Priya Nair",
+        "email": "p.nair@tate.org.uk",
+        "country_code": "+44",
+        "phone_number": "2078878000",
+        "contact_type": "institution"
+    },
+    {
+        "contact_name": "Luca Ferretti",
+        "email": "lferretti@ferrettarte.it",
+        "country_code": "+39",
+        "phone_number": "3312345678",
+        "contact_type": "dealer"
+    },
+    {
+        "contact_name": "Sophie Marchetti",
+        "email": "smarchetti@gmail.com",
+        "country_code": "+44",
+        "phone_number": "7823456789",
+        "contact_type": "collector"
+    },
+    {
+        "contact_name": "James Okafor",
+        "email": "jokafor@modernarts.org",
+        "country_code": "+44",
+        "phone_number": "2073456789",
+        "contact_type": "institution"
+    },
+    {
+        "contact_name": "Elena Vasquez",
+        "email": "evasquez@vasquezgallery.es",
+        "country_code": "+34",
+        "phone_number": "917654321",
+        "contact_type": "dealer"
+    },
+    {
+        "contact_name": "Thomas Kruger",
+        "email": "tkruger@krugersammlung.de",
+        "country_code": "+49",
+        "phone_number": "30123456",
+        "contact_type": "collector"
+    },
+    {
+        "contact_name": "Amara Diallo",
+        "email": "a.diallo@contemporaryafrica.com",
+        "country_code": "+44",
+        "phone_number": "7934567890",
+        "contact_type": "dealer"
+    },
+    {
+        "contact_name": "Charlotte Pemberton",
+        "email": "cpemberton@sothebys.com",
+        "country_code": "+44",
+        "phone_number": "2072935000",
+        "contact_type": "auction_house"
+    },
+    {
+        "contact_name": "Hiroshi Tanaka",
+        "email": "h.tanaka@mori.art.museum",
+        "country_code": "+81",
+        "phone_number": "335879777",
+        "contact_type": "institution"
+    },
+    {
+        "contact_name": "Victoria Aldridge",
+        "email": "valdridge@christies.com",
+        "country_code": "+44",
+        "phone_number": "2073892820",
+        "contact_type": "auction_house"
+    },
+    {
+        "contact_name": "Rafael Montoya",
+        "email": "rmontoya@montoyadealers.mx",
+        "country_code": "+52",
+        "phone_number": "5512345678",
+        "contact_type": "dealer"
+    },
+    {
+        "contact_name": "Natasha Ivanova",
+        "email": "n.ivanova@hermitage.ru",
+        "country_code": "+7",
+        "phone_number": "8124957110",
+        "contact_type": "institution"
+    },
+    {
+        "contact_name": "Oliver Sinclair",
+        "email": "osinclair@sinclaircollection.co.uk",
+        "country_code": "+44",
+        "phone_number": "7856789012",
+        "contact_type": "collector"
+    },
+    {
+        "contact_name": "Mei Ling Chen",
+        "email": "mlchen@m-art.com.hk",
+        "country_code": "+852",
+        "phone_number": "22345678",
+        "contact_type": "dealer"
+    },
+    {
+        "contact_name": "Fatima Al-Hassan",
+        "email": "falhassan@qma.com.qa",
+        "country_code": "+974",
+        "phone_number": "44123456",
+        "contact_type": "institution"
+    },
+    {
+        "contact_name": "George Harrington",
+        "email": "gharrington@harringtonfoundation.org",
+        "country_code": "+44",
+        "phone_number": "7778901234",
+        "contact_type": "collector"
+    },
+    {
+        "contact_name": "Simone Laurent",
+        "email": "slaurent@centrepompidou.fr",
+        "country_code": "+33",
+        "phone_number": "144781233",
+        "contact_type": "institution"
+    },
+    {
+        "contact_name": "Daniel Osei",
+        "email": "dosei@oseicollects.com",
+        "country_code": "+44",
+        "phone_number": "7890123456",
+        "contact_type": "collector"
     }
 ]

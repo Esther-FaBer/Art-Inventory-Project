@@ -79,7 +79,7 @@ exports.deleteContact = async (contactId) => {
 exports.fetchContactsByType = async (contactType) => {
     const { rows: contacts } = await db.query(
         `SELECT contact_id, contact_type, contact_name, email, 
-                phone_number, address, city, country, notes
+                country_code, phone_number, address, city, country, notes
          FROM contacts
          WHERE contact_type = $1
          ORDER BY contact_name ASC`,
@@ -93,7 +93,7 @@ exports.fetchContactsByType = async (contactType) => {
 exports.fetchContactsByCity = async (city) => {
     const { rows: contacts } = await db.query(
         `SELECT contact_id, contact_type, contact_name, email, 
-                phone_number, address, city, country, notes
+                country_code, phone_number, address, city, country, notes
          FROM contacts
          WHERE city ILIKE $1
          ORDER BY contact_name ASC`,
