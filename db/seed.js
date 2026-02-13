@@ -26,7 +26,7 @@ await db.query(`CREATE TABLE galleries(
     city VARCHAR(100),
     country VARCHAR(100),
     contact_email VARCHAR(100),
-    phone_number VARCHAR(50)
+    phone_number VARCHAR(50),
     website VARCHAR(255),
     description TEXT,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
