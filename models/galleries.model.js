@@ -27,3 +27,31 @@ exports.fetchGalleryById = async (galleryId) => {
 
     return galleries[0];
 };
+
+
+// create new gallery
+exports.insertGallery = async (galleryData) => {
+    const { 
+        gallery_name, 
+        address, 
+        city, 
+        country, 
+        contact_email,   
+        phone_number,    
+        website, 
+        description 
+    } = galleryData;
+
+    const { rows: galleries } = await db.query(
+        `INSERT INTO galleries 
+            (gallery_name, address, city, country, 
+             contact_email, phone_number, website, description)
+         VALUES 
+            ($1, $2, $3, $4, $5, $6, $7, $8)
+         RETURNING *`,
+        [gallery_name, address, city, country, 
+         contact_email, phone_number, website, description]
+    );
+
+    return galleries[0];
+};
