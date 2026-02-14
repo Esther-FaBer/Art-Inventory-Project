@@ -57,7 +57,6 @@ exports.insertGallery = async (galleryData) => {
 };
 
 //update gallery
-
 exports.updateGallery = async(galleryId, galleryData) => {
     const {
         gallery_name, 
@@ -89,4 +88,16 @@ exports.updateGallery = async(galleryId, galleryData) => {
 
     return galleries[0];
     
+};
+
+// delete gallery
+exports.deleteGallery = async (galleryId) => {
+    const { rows: galleries } = await db.query(
+        `DELETE FROM galleries
+         WHERE gallery_id = $1
+         RETURNING *`,
+        [galleryId]
+    );
+
+    return galleries[0];
 };
