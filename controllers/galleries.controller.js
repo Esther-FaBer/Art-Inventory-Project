@@ -1,4 +1,4 @@
-const { fetchGalleries, fetchGalleryById, insertGallery, updateGallery, deleteGallery } =  require("../models/galleries.model");
+const { fetchGalleries, fetchGalleryById, insertGallery, updateGallery, deleteGallery, fetchGalleryExhibitions } =  require("../models/galleries.model");
 
 // GET /api/galleries
 exports.getGalleries = async (req, res, next) => {
@@ -72,4 +72,44 @@ exports.updateGallery = async (req, res, next) => {
             message: "Gallery updated successfully",
             gallery
         });
+};
+
+// DELETE /api/galleries/:id
+exports.deleteGallery = async (req, res, next) => {
+
+        const { id } = req.params;
+
+        const gallery = await deleteGallery(id);
+
+        if (!gallery) {
+            return res.status(404).send({ message: "Gallery not found" });
+        }
+
+        return res.status(200).send({
+            message: "Gallery deleted successfully",
+            gallery
+        });
+};
+
+// GET /api/galleries/:id/exhibitions
+exports.getGalleryExhibitions = async (req, res, next) => {
+
+        const { id } = req.params;
+
+        const gallery = await fetchGalleryById(id);
+
+        if (!gallery) {
+            return res.status(404).send({ message: "Gallery not found" });
+        }
+
+        const exhibitions = await fetchGalleryExhibitions(id);
+
+        return res.status(200).send({
+            gallery: {
+                gallery_id: gallery.gallery_id,
+                gallery_name: gallery.gallery_name
+            },
+            exhibitions
+        });
+
 };

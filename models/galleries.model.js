@@ -101,3 +101,16 @@ exports.deleteGallery = async (galleryId) => {
 
     return galleries[0];
 };
+
+//fetch gallery exhibitions
+exports.fetchGalleryExhibitions = async (galleryId) => {
+    const { rows: exhibitions } = await db.query(
+        `SELECT exhibition_id, title, start_date, end_date, status
+         FROM exhibitions
+         WHERE gallery_id = $1
+         ORDER BY start_date DESC`,
+        [galleryId]
+    );
+
+    return exhibitions;
+};
