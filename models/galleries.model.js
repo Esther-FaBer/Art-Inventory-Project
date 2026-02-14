@@ -55,3 +55,38 @@ exports.insertGallery = async (galleryData) => {
 
     return galleries[0];
 };
+
+//update gallery
+
+exports.updateGallery = async(galleryId, galleryData) => {
+    const {
+        gallery_name, 
+        address, 
+        city, 
+        country, 
+        contact_email,   
+        phone_number,    
+        website, 
+        description
+    } = galleryData;
+
+    const { rows: galleries } = await db.query(
+        `UPDATE galleries
+         SET gallery_name  = $1,
+             address       = $2,
+             city          = $3,
+             country       = $4,
+             contact_email = $5,
+             phone_number  = $6,
+             website       = $7,
+             description   = $8,
+             updated_at    = CURRENT_TIMESTAMP
+         WHERE gallery_id  = $9
+         RETURNING *`,
+        [gallery_name, address, city, country, 
+         contact_email, phone_number, website, description, galleryId]
+    );
+
+    return galleries[0];
+    
+};
