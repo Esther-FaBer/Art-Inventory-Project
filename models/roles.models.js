@@ -21,3 +21,17 @@ exports.fetchRoleById = async (roleId) => {
 
     return roles[0];
 };
+
+// new role
+exports.insertRole = async (roleData) => {
+    const { role_name, description } = roleData;
+
+    const { rows: roles } = await db.query(
+        `INSERT INTO roles (role_name, description)
+         VALUES ($1, $2)
+         RETURNING *`,
+        [role_name, description]
+    );
+
+    return roles[0];
+};
