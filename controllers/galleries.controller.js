@@ -2,6 +2,7 @@ const { fetchGalleries, fetchGalleryById, insertGallery, updateGallery, deleteGa
 
 // GET /api/galleries
 exports.getGalleries = async (req, res, next) => {
+    try{
 
     const galleries = await fetchGalleries();
 
@@ -10,10 +11,14 @@ exports.getGalleries = async (req, res, next) => {
     }
 
     return res.status(200).send({ galleries });
+    } catch (error) {
+        next(error);
+    }
 };
 
 // GET /api/galleries/:id
 exports.getGalleryById = async (req, res, next) => {
+    try{
 
         const { id } = req.params;
 
@@ -24,10 +29,14 @@ exports.getGalleryById = async (req, res, next) => {
         }
 
         return res.status(200).send({ gallery });
+        } catch (error) {
+        next(error);
+    }
 };
 
 // POST /api/galleries
 exports.createGallery = async (req, res, next) => {
+    try{
 
         const { gallery_name, contact_email } = req.body;
 
@@ -45,11 +54,16 @@ exports.createGallery = async (req, res, next) => {
             message: "Gallery created successfully",
             gallery
         });
+
+        } catch (error) {
+        next(error);
+    }
     };
 
 // PUT /api/galleries/:id
 
 exports.updateGallery = async (req, res, next) => {
+    try{
    
         const { id } = req.params;
         const { contact_email } = req.body;
@@ -72,10 +86,15 @@ exports.updateGallery = async (req, res, next) => {
             message: "Gallery updated successfully",
             gallery
         });
+
+        } catch (error) {
+        next(error);
+    }
 };
 
 // DELETE /api/galleries/:id
 exports.deleteGallery = async (req, res, next) => {
+    try{
 
         const { id } = req.params;
 
@@ -89,10 +108,14 @@ exports.deleteGallery = async (req, res, next) => {
             message: "Gallery deleted successfully",
             gallery
         });
+        } catch (error) {
+        next(error);
+    }
 };
 
 // GET /api/galleries/:id/exhibitions
 exports.getGalleryExhibitions = async (req, res, next) => {
+    try{
 
         const { id } = req.params;
 
@@ -111,5 +134,8 @@ exports.getGalleryExhibitions = async (req, res, next) => {
             },
             exhibitions
         });
+        } catch (error) {
+        next(error);
+    }
 
 };
