@@ -37,7 +37,7 @@ await db.query(`CREATE TABLE galleries(
 await db.query(`CREATE TABLE roles(
     role_id SERIAL PRIMARY KEY,
     role_name VARCHAR(50) NOT NULL
-);`);
+    );`);
 
 //create contacts table
 await db.query(`CREATE TABLE contacts(
@@ -64,7 +64,7 @@ await db.query(`CREATE TABLE artworks(
     artwork_type  VARCHAR(50),
     medium VARCHAR(255),
     description TEXT,
-    price INT,
+    price DECIMAL (10, 2),
     status VARCHAR(50),
     vat_status VARCHAR(50),
     edition INT
@@ -78,19 +78,19 @@ await db.query(`CREATE TABLE exhibitions(
     start_date DATE,
     end_date DATE,
     description TEXT
-     );`);
+    );`);
 
 //create join table artworks - exhibitions
 await db.query(`CREATE TABLE artwork_exhibitions(
     artwork_id INT REFERENCES artworks(artwork_id) ON DELETE CASCADE,
-    exhibition_id INT REFERENCES exhibitions(exhibition_id ON DELETE CASCADE,
+    exhibition_id INT REFERENCES exhibitions(exhibition_id) ON DELETE CASCADE,
     PRIMARY KEY (artwork_id, exhibition_id)
     );`);
 
 //create join table contacts - roles
 await db.query(`CREATE TABLE contact_roles(
     contact_id INT REFERENCES contacts(contact_id) ON DELETE CASCADE,
-    role_id INT REFERENCES roles(role_id ON DELETE CASCADE,
+    role_id INT REFERENCES roles(role_id) ON DELETE CASCADE,
     PRIMARY KEY (contact_id, role_id)
     );`);
 
