@@ -6,7 +6,7 @@ exports.fetchArtworks = async () => {
         const {rows: artworks } = await db.query(
             `SELECT artwork_id, artist_id, title, year_created, 
                 artwork_type, medium, description, price, 
-                status, vat_status, edition
+                status, vat_status, edition, artist_name
             FROM artworks
             ORDER BY artwork_id DESC`
         );    
