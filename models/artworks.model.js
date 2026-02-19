@@ -1,9 +1,8 @@
 const db = require("../db/connection");
 
-
 // get all artworks
 exports.fetchArtworks = async () => {
-    try {
+
         const {rows: artworks } = await db.query(
             `SELECT artwork_id, artist_id, title, year_created, 
                 artwork_type, medium, description, price, 
@@ -12,16 +11,11 @@ exports.fetchArtworks = async () => {
             ORDER BY artwork_id DESC`
         );    
         return artworks;
-
-    } catch (error) {
-        console.error("error fetchin artworks:",  error);
-        throw error;
-    }
 };
 
 // get artwork by ID
 exports.fetchArtworkById = async (artworkId) => {
-    try {
+
         const { rows: artworks } = await db.query(
             `SELECT artwork_id, artist_id, title, year_created, 
                 artwork_type, medium, description, price, 
@@ -32,10 +26,6 @@ exports.fetchArtworkById = async (artworkId) => {
         );
         return artworks[0]; 
 
-    } catch (error) {
-        console.log('Error fetching artwork', error);
-        throw error;
-    }
 };
 
 //create a new artwork
@@ -45,7 +35,6 @@ exports.createArtwork = async (artworkData) => {
         medium, description, price, status, vat_status, edition 
     } = artworkData;
 
-    try {
         const { rows: artworks } = await db.query(
             `INSERT INTO artworks (
                 artist_id, title, year_created, artwork_type, 
@@ -58,10 +47,6 @@ exports.createArtwork = async (artworkData) => {
         );
         return artworks[0];
 
-    } catch (error) {
-        console.error('Error creating artwork:', error);
-        throw error;
-    }
 };
 
 // update pre-existing artwork
@@ -71,7 +56,7 @@ exports.updateArtwork = async (artworkId, artworkData) => {
         medium, description, price, status, vat_status, edition 
     } = artworkData;
     
-    try {
+
         const { rows: artworks } = await db.query(
             `UPDATE artworks
              SET artist_id = $1, 
@@ -90,15 +75,12 @@ exports.updateArtwork = async (artworkId, artworkData) => {
              medium, description, price, status, vat_status, edition, artworkId]
         );
         return artworks[0];
-    } catch (error) {
-        console.error('Error updating artwork:', error);
-        throw error;
-    }
+
 };
 
 // delete artwork
 exports.deleteArtwork = async (artworkId) => {
-    try {
+
         const { rows: artworks } = await db.query(
             `DELETE FROM artworks 
              WHERE artwork_id = $1 
@@ -106,15 +88,12 @@ exports.deleteArtwork = async (artworkId) => {
             [artworkId]
         );
         return artworks[0];
-    } catch (error) {
-        console.error('Error deleting artwork:', error);
-        throw error;
-    }
+
 };
 
 // get artworks by artist
 exports.fetchArtworksByArtist = async (artistId) => {
-    try {
+
         const { rows: artworks } = await db.query(
             `SELECT 
                 artwork_id, artist_id, title, year_created, 
@@ -126,35 +105,12 @@ exports.fetchArtworksByArtist = async (artistId) => {
             [artistId]
         );
         return artworks;
-    } catch (error) {
-        console.error('Error fetching artworks by artist:', error);
-        throw error;
-    }
-};
 
-// get artworks by artist
-exports.fetchArtworksByArtist = async (artistId) => {
-    try {
-        const { rows: artworks } = await db.query(
-            `SELECT 
-                artwork_id, artist_id, title, year_created, 
-                artwork_type, medium, description, price, 
-                status, vat_status, edition
-             FROM artworks
-             WHERE artist_id = $1
-             ORDER BY year_created DESC`,
-            [artistId]
-        );
-        return artworks;
-    } catch (error) {
-        console.error('Error fetching artworks by artist:', error);
-        throw error;
-    }
 };
 
 // search artworks
 exports.searchArtworks = async (searchTerm) => {
-    try {
+
         const { rows: artworks } = await db.query(
             `SELECT artwork_id, artist_id, title, year_created, artwork_type, 
                 medium, description, price, status, vat_status, edition, artist_name
@@ -167,8 +123,5 @@ exports.searchArtworks = async (searchTerm) => {
             [`%${searchTerm}%`]
         );
         return artworks;
-    } catch (error) {
-        console.error('Error searching artworks:', error);
-        throw error;
-    }
+
 };
