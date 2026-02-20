@@ -118,13 +118,23 @@ exports.fetchArtworksByArtist = async (artistId) => {
 
         const { rows: artworks } = await db.query(
             `SELECT 
-                artwork_id, artist_id, title, year_created, 
-                artwork_type, medium, description, price, 
-                status, vat_status, edition
-             FROM artworks
-             WHERE artist_id = $1
-             ORDER BY year_created DESC`,
-            [artistId]
+                aw.artwork_id, 
+                aw.artist_id,
+                ar.artist_name,
+                aw.title, 
+                aw.year_created, 
+                aw.artwork_type, 
+                aw.medium, 
+                aw.description, 
+                aw.price, 
+                aw.status, 
+                aw.vat_status, 
+                aw.edition
+                FROM artworks aw
+                LEFT JOIN artists ar ON aw.artist_id = ar.artist_id
+                WHERE aw.artist_id = $1
+                ORDER BY aw.year_created DESC`,
+                [artistId]
         );
         return artworks;
 
@@ -134,14 +144,25 @@ exports.fetchArtworksByArtist = async (artistId) => {
 exports.searchArtworks = async (searchTerm) => {
 
         const { rows: artworks } = await db.query(
-            `SELECT artwork_id, artist_id, title, year_created, artwork_type, 
-                medium, description, price, status, vat_status, edition, artist_name
-             FROM artworks a
-             LEFT JOIN artists ar ON a.artist_id = ar.artist_id
-             WHERE a.title ILIKE $1 
-                OR a.description ILIKE $1 
+            `SELECT 
+                aw.artwork_id, 
+                aw.artist_id,
+                ar.artist_name,
+                aw.title, 
+                aw.year_created, 
+                aw.artwork_type, 
+                aw.medium, 
+                aw.description, 
+                aw.price, 
+                aw.status, 
+                aw.vat_status, 
+                aw.edition
+            FROM artworks aw
+            LEFT JOIN artists ar ON aw.artist_id = ar.artist_id
+            WHERE aw.title ILIKE $1 
+                OR aw.description ILIKE $1 
                 OR ar.artist_name ILIKE $1
-             ORDER BY a.artwork_id DESC`,
+            ORDER BY aw.artwork_id DESC`,
             [`%${searchTerm}%`]
         );
         return artworks;
