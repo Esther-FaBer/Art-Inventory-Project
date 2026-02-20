@@ -4,11 +4,22 @@ const db = require("../db/connection");
 exports.fetchArtworks = async () => {
 
         const {rows: artworks } = await db.query(
-            `SELECT artwork_id, artist_id, title, year_created, 
-                artwork_type, medium, description, price, 
-                status, vat_status, edition, artist_name
-            FROM artworks
-            ORDER BY artwork_id DESC`
+            `SELECT 
+            aw.artwork_id, 
+            aw.artist_id, 
+            ar.artist_name,
+            aw.title, 
+            aw.year_created, 
+            aw.artwork_type, 
+            aw.medium, 
+            aw.description, 
+            aw.price, 
+            aw.status, 
+            aw.vat_status, 
+            aw.edition
+            FFROM artworks aw
+            LEFT JOIN artists ar ON aw.artist_id = ar.artist_id
+            ORDER BY aw.artwork_id DESC`
         );    
         return artworks;
 };
