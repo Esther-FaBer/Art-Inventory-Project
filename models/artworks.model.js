@@ -24,7 +24,7 @@ exports.fetchArtworks = async () => {
         return artworks;
 };
 
-// get artwork by ID
+// get artwork by Id
 exports.fetchArtworkById = async (artworkId) => {
 
         const { rows: artworks } = await db.query(
