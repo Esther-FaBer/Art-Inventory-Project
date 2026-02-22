@@ -61,7 +61,6 @@ exports.createGallery = async (req, res, next) => {
     };
 
 // PUT /api/galleries/:id
-
 exports.updateGallery = async (req, res, next) => {
     try{
    

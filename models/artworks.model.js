@@ -72,7 +72,7 @@ exports.createArtwork = async (artworkData) => {
 };
 
 // update pre-existing artwork
-exports.updateArtwork = async (artworkId, artworkData) => {
+exports.updateArtworkById = async (artworkId, artworkData) => {
     const { 
         artist_id, title, year_created, artwork_type, 
         medium, description, price, status, vat_status, edition 

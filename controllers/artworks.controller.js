@@ -1,6 +1,6 @@
-const { fetchArtworks, fetchArtworkById, createArtwork } =  require("../models/artworks.model");
+const { fetchArtworks, fetchArtworkById, createArtwork, updateArtwork, updateArtworkById } =  require("../models/artworks.model");
 
-//get all artworks
+// GET /api/artworks
 exports.getArtworks = async (req, res, next) => {
 
     try{
@@ -17,7 +17,7 @@ exports.getArtworks = async (req, res, next) => {
 };
 
 
-//get artwork by Id
+// GET /api/artworks/:id
 exports.getArtworkById = async (req, res, next) => {
 
     try{
@@ -38,7 +38,7 @@ exports.getArtworkById = async (req, res, next) => {
     }
 };
 
-//create new artwork
+// POST /api/artworks
 exports.createArtwork = async (req, res, next) => {
 
     try{
@@ -52,6 +52,28 @@ exports.createArtwork = async (req, res, next) => {
         return res.status(201).send({ artwork });
     
     } catch(error) {
+        next(error);
+    }
+};
+
+// PUT /api/artworks/:id
+exports.updateArtwork = async (req, res, next) => {
+    try {
+        const { id } = req.params;
+        const artwork = await updateArtworkById(id, req.body);
+
+        if (!artwork) {
+            const error = new Error('Artwork not found');
+            error.statusCode = 404;
+            throw error;
+        }
+
+        return res.status(200).send({
+            message: 'Artwork updated successfully',
+            artwork
+        });
+
+    } catch (error) {
         next(error);
     }
 };
