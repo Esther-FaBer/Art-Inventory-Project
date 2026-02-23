@@ -5,7 +5,7 @@ const db = require("../db/connection");
 exports.fetchArtists = async () => {
     const { rows: artists } = await db.query(
         `SELECT artist_id, artist_name, birth_year, death_year, 
-        nationality, biography
+                nationality, biography
         FROM artists
         ORDER BY artist_name ASC`);
     
@@ -34,6 +34,25 @@ exports.insertArtist = async (artistData) => {
          VALUES ($1, $2, $3, $4, $5)
          RETURNING *`,
         [artist_name, birth_year, death_year, nationality, biography]
+    );
+    
+    return artists[0];
+};
+
+//update artist
+exports.updateArtistById = async (artistId, artistData) => {
+    const { artist_name, birth_year, death_year, nationality, biography } = artistData;
+    
+    const { rows: artists } = await db.query(
+        `UPDATE artists
+         SET artist_name = $1,
+             birth_year = $2,
+             death_year = $3,
+             nationality = $4,
+             biography = $5
+         WHERE artist_id = $6
+         RETURNING *`,
+        [artist_name, birth_year, death_year, nationality, biography, artistId]
     );
     
     return artists[0];
