@@ -57,3 +57,15 @@ exports.updateArtistById = async (artistId, artistData) => {
     
     return artists[0];
 };
+
+// delete artist
+exports.deleteArtist = async (artistId) => {
+    const { rows: artists } = await db.query(
+        `DELETE FROM artists
+         WHERE artist_id = $1
+         RETURNING *`,
+        [artistId]
+    );
+    
+    return artists[0];
+};
