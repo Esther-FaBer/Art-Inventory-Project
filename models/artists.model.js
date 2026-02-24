@@ -85,3 +85,18 @@ exports.searchArtists = async (searchTerm) => {
     
     return artists;
 };
+
+//fetch artist's works
+exports.fetchArtistArtworks = async (artistId) => {
+    const { rows: artworks } = await db.query(
+        `SELECT aw.artwork_id, aw.artist_id, aw.title, aw.year_created, 
+                aw.artwork_type, aw.medium, aw.description, aw.price, 
+                aw.status, aw.vat_status, aw.edition
+         FROM artworks aw
+         WHERE aw.artist_id = $1
+         ORDER BY aw.year_created DESC`,
+        [artistId]
+    );
+    
+    return artworks;
+};
