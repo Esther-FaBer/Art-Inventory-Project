@@ -69,3 +69,19 @@ exports.deleteArtist = async (artistId) => {
     
     return artists[0];
 };
+
+// search artist work
+exports.searchArtists = async (searchTerm) => {
+    const { rows: artists } = await db.query(
+        `SELECT artist_id, artist_name, birth_year, death_year, 
+                nationality, biography
+         FROM artists
+         WHERE artist_name ILIKE $1 
+            OR nationality ILIKE $1
+            OR biography ILIKE $1
+         ORDER BY artist_name ASC`,
+        [`%${searchTerm}%`]
+    );
+    
+    return artists;
+};
