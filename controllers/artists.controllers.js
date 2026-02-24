@@ -1,4 +1,4 @@
-const { fetchArtists, fetchArtistById, insertArtist  } =  require("../models/artists.models");
+const { fetchArtists, fetchArtistById, insertArtist, updateArtistById, deleteArtist  } =  require("../models/artists.models");
 
 // GET /api/artists
 exports.getArtists = async (req, res, next) => {
@@ -50,4 +50,46 @@ exports.createArtist = async (req, res, next) => {
     }
 };
 
+// PUT /api/artists/:id
+exports.updateArtist = async (req, res, next) => {
+    try {
+        const artist = await updateArtistById(id, req.body);
 
+        if (!artist) {
+            const error = new Error('Artist not found');
+            error.statusCode = 404;
+            throw error;
+        }
+
+        return res.status(200).send({
+            message: 'Artist updated successfully',
+            artist
+        });
+
+    } catch (error) {
+        next(error);
+    }
+};
+
+// DELETE /api/artists/:id
+exports.deleteArtist = async (req, res, next) => {
+    try {
+        const { id } = req.params;
+
+        const artist = await deleteArtist(id);
+
+        if (!artist) {
+            const error = new Error('Artist not found');
+            error.statusCode = 404;
+            throw error;
+        }
+
+        return res.status(200).send({
+            message: 'Artist deleted successfully',
+            artist
+        });
+
+    } catch (error) {
+        next(error);
+    }
+};
