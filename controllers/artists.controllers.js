@@ -1,6 +1,6 @@
-const { fetchArtists, fetchArtistById, insertArtist, updateArtistById, deleteArtist, fetchArtistArtworks  } =  require("../models/artists.models");
+const { fetchArtists, fetchArtistById, insertArtist, updateArtistById, deleteArtist, searchArtists, fetchArtistArtworks  } =  require("../models/artists.models");
 
-// GET /api/artists
+// GET /api/artists -get all artist
 exports.getArtists = async (req, res, next) => {
     try {
         const artists = await fetchArtists();
@@ -16,7 +16,7 @@ exports.getArtists = async (req, res, next) => {
     }
 };
 
-// GET /api/artists/:id
+// GET /api/artists/:id - get artistby Id
 exports.getArtistById = async (req, res, next) => {
     try {
         const { id } = req.params;
@@ -35,7 +35,7 @@ exports.getArtistById = async (req, res, next) => {
     }
 };
 
-// POST /api/artists
+// POST /api/artists -create new artist
 exports.createArtist = async (req, res, next) => {
     try {
         const artist = await insertArtist(req.body);
@@ -50,9 +50,10 @@ exports.createArtist = async (req, res, next) => {
     }
 };
 
-// PUT /api/artists/:id
+// PUT /api/artists/:id -update existing artist
 exports.updateArtist = async (req, res, next) => {
     try {
+        const { id } = req.params; 
         const artist = await updateArtistById(id, req.body);
 
         if (!artist) {
@@ -71,7 +72,7 @@ exports.updateArtist = async (req, res, next) => {
     }
 };
 
-// DELETE /api/artists/:id
+// DELETE /api/artists/:id -delete artist
 exports.deleteArtist = async (req, res, next) => {
     try {
         const { id } = req.params;
@@ -94,7 +95,7 @@ exports.deleteArtist = async (req, res, next) => {
     }
 };
 
-// GET /api/artists/:id/artworks
+// GET /api/artists/:id/artworks  -get artist's artworks
 exports.getArtistArtworks = async (req, res, next) => {
     try {
         const { id } = req.params;
@@ -118,6 +119,29 @@ exports.getArtistArtworks = async (req, res, next) => {
             artworks
         });
 
+    } catch (error) {
+        next(error);
+    }
+};
+
+// GET /api/artists/search?q=picasso - search artist
+exports.searchArtists = async (req, res, next) => {
+    try {
+        const { q } = req.query;
+
+        if (!q || !q.trim()) {
+            const error = new Error('Search query is required');
+            error.statusCode = 400;
+            throw error;
+        }
+
+        const artists = await searchArtists(q);
+
+        return res.status(200).send({
+            query: q,
+            count: artists.length,
+            artists
+        });
     } catch (error) {
         next(error);
     }
