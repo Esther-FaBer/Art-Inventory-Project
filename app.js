@@ -19,6 +19,16 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+
+
 //create routes
+
+// api/health endpoint
+app.get("/api/health", (req, res) => {
+    res.status(200).json({
+        status: "ok",
+        message: "Art Inventory API is running"
+    });
+});
 
 module.exports = app;
