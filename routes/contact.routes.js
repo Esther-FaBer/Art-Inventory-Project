@@ -10,7 +10,6 @@ const {
     searchContacts
 } = require('../controllers/contacts.controller');
 
-
 router.get('/search', searchContacts);
 
 router.get('/', getContacts);
