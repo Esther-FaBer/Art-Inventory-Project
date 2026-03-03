@@ -11,3 +11,16 @@ exports.handleBadRequests = (err, req, res, next) => {
         next(err);
     }
 };
+
+exports.handleCustomsErrors = (err, req, res, next) => {
+    if(err.status){
+    res.status(err.status).send({ msg: err.msg });
+    } else {
+        next(err);
+    }
+};
+
+exports.handleServerErrors = (err, req, res, next) => {
+    console.log(err);
+    res.status(500).send({ msg: "Server Error."})
+};
