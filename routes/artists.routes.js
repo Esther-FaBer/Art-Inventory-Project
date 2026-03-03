@@ -6,7 +6,7 @@ const { getArtists,
     updateArtist,
     deleteArtist,
     searchArtists,
-    getArtistArtworks } = require("../controllers/artists.controllers");
+    getArtistArtworks } = require("../controllers/artists.controller");
 
 router.get('/search', searchArtists);
 
