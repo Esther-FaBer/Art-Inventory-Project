@@ -2,11 +2,26 @@ const express = require("express");
 const cors = require("cors");
 
 // Import all routes
+console.log("Loading artist routes...");
 const artistRoutes = require("./routes/artist.routes");
+console.log("Artist routes loaded");
+
+console.log("Loading artwork routes...");
 const artworkRoutes = require("./routes/artwork.routes");
+console.log("Artwork routes loaded");
+
+console.log("Loading gallery routes...");
 const galleryRoutes = require("./routes/gallery.routes");
+console.log("Gallery routes loaded");
+
+console.log("Loading contact routes...");
 const contactRoutes = require("./routes/contact.routes");
+console.log("Contact routes loaded");
+
+console.log("Loading role routes...");
 const roleRoutes = require("./routes/role.routes");
+console.log("Role routes loaded");
+
 
 // Import error handlers
 const { 
