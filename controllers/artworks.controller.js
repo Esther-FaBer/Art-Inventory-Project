@@ -1,4 +1,4 @@
-const { fetchArtworks, fetchArtworkById, createArtwork, updateArtwork, updateArtworkById } =  require("../models/artworks.model");
+const { fetchArtworks, fetchArtworkById, createArtwork, updateArtwork, updateArtworkById, searchArtworks } =  require("../models/artworks.model");
 
 // GET /api/artworks
 exports.getArtworks = async (req, res, next) => {
@@ -75,5 +75,29 @@ exports.updateArtwork = async (req, res, next) => {
 
     } catch (error) {
         next(error);
+    }
+};
+
+// GET /api/artworks/search?q=haring
+exports.searchArtworks = async (req, res, next) => {
+    try {
+        const { q } = req.query;
+
+        if (!q || !q.trim()) {
+            const error = new Error('Search query is required');
+            error.status = 400;
+            throw error;
+        }
+
+        const artworks = await searchArtworks(q);
+
+        return res.status(200).send({
+            query: q,
+            count:artworks.length,
+            artworks
+        });
+        
+    } catch (error) {
+        next (error);
     }
 };
