@@ -1,4 +1,10 @@
-const { fetchArtworks, fetchArtworkById, createArtwork, updateArtwork, updateArtworkById, searchArtworks } =  require("../models/artworks.model");
+const { fetchArtworks, 
+    fetchArtworkById, 
+    createArtwork, 
+    updateArtwork,
+    deleteArtwork, 
+    updateArtworkById, 
+    searchArtworks } =  require("../models/artworks.model");
 
 // GET /api/artworks
 exports.getArtworks = async (req, res, next) => {
@@ -99,5 +105,28 @@ exports.searchArtworks = async (req, res, next) => {
         
     } catch (error) {
         next (error);
+    }
+};
+
+// DELETE /api/artworks/:id
+exports.deleteArtwork = async (req, res, next) => {
+    try {
+        const { id } = req.params;
+
+        const artwork = await deleteArtworkFromDb(id);
+
+        if (!artwork) {
+            const error = new Error('Artwork not found');
+            error.status = 404;
+            throw error;
+        }
+
+        return res.status(200).send({
+            message: 'Artwork deleted successfully',
+            artwork
+        });
+
+    } catch (error) {
+        next(error);
     }
 };

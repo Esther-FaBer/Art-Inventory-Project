@@ -10,6 +10,7 @@ const {
     searchArtworks
 } = require('../controllers/artworks.controller');
 
+router.get('/search', searchArtworks);
 
 // CRUD
 router.get('/', getArtworks);
@@ -18,6 +19,6 @@ router.post('/', createArtwork);
 router.put('/:id', updateArtwork);
 router.patch('/:id', updateArtwork);
 router.delete('/:id', deleteArtwork);
-router.get('/search', searchArtworks);
+
 
 module.exports = router;
