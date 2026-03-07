@@ -7,10 +7,10 @@ const {
     createGallery,
     updateGallery,
     deleteGallery,
-    searchGalleries
+    //searchGalleries
 } = require('../controllers/galleries.controller');
 
-router.get('/search', searchGalleries);
+//router.get('/search', searchGalleries);
 
 router.get('/', getGalleries);
 router.get('/:id', getGalleryById);

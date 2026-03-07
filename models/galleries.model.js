@@ -114,3 +114,20 @@ exports.fetchGalleryExhibitions = async (galleryId) => {
 
     return exhibitions;
 };
+
+// search galleries
+exports.searchGalleries = async (searchTerm) => {
+    const { rows: galleries } = await db.query(
+        `SELECT gallery_id, gallery_name, address, city, country, 
+                contact_email, phone_number, website, description
+         FROM galleries
+         WHERE gallery_name ILIKE $1 
+            OR city ILIKE $1
+            OR country ILIKE $1
+            OR description ILIKE $1
+         ORDER BY gallery_name ASC`,
+        [`%${searchTerm}%`]
+    );
+    
+    return galleries;
+};

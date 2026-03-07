@@ -136,5 +136,28 @@ exports.getGalleryExhibitions = async (req, res, next) => {
         } catch (error) {
         next(error);
     }
+};
 
+// GET /api/galleries/search?q=london
+exports.searchGalleries = async (req, res, next) => {
+    try {
+        const { q } = req.query;
+        
+        if (!q || !q.trim()) {
+            const error = new Error('Search query is required');
+            error.status = 400;
+            throw error;
+        }
+
+        const galleries = await searchGalleries(q);
+
+        return res.status(200).send({
+            query: q,
+            count: galleries.length,
+            galleries
+        });
+
+    } catch (error) {
+        next(error);
+    }
 };
