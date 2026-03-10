@@ -6,7 +6,8 @@ exports.fetchGalleries = async () => {
 
     const { rows: galleries } = await db.query(
         `SELECT gallery_id, gallery_name, address, city,
-         country, contact_email, phone_number
+         country, contact_email, phone_number,
+         website, description
         FROM galleries
         ORDER BY gallery_name ASC`
         );
