@@ -112,3 +112,25 @@ exports.deleteContact = async (req, res, next) => {
         next(error);
     }
 };
+
+//search term - GET /api/contacts/search?q=term
+exports.searchContacts = async (req, res, next) => {
+    try {
+        const { q } = req.query;
+        
+        if (!q || !q.trim()) {
+            return res.status(400).send({ message: 'Search query is required' });
+        }
+        
+        const contacts = await searchContactsInDb(q);
+        
+        return res.status(200).send({
+            query: q,
+            count: contacts.length,
+            contacts
+        });
+        
+    } catch (error) {
+        next(error);
+    }
+};
