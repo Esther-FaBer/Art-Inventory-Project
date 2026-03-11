@@ -91,3 +91,24 @@ exports.updateContact = async (req, res, next) => {
         next(error);
     }
 };
+
+// delete contact - DELETE /api/contacts/:id
+exports.deleteContact = async (req, res, next) => {
+    try {
+        const { id } = req.params;
+        
+        const contact = await deleteContactFromDb(id);
+        
+        if (!contact) {
+            return res.status(404).send({ message: 'Contact not found' });
+        }
+        
+        return res.status(200).send({
+            message: 'Contact deleted successfully',
+            contact
+        });
+        
+    } catch (error) {
+        next(error);
+    }
+};
