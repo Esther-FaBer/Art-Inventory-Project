@@ -1,8 +1,10 @@
-const { fetchContacts, 
+const { 
+    fetchContacts, 
     fetchContactById,
     createContact,
-    updateContact,
-    deleteContact } =  require("../models/contacts.model");
+    updateContact: updateContactInDb,
+    deleteContact: deleteContactFromDb,
+    } =  require("../models/contacts.model");
 
 
 // get all contacts - GET /api/contacts
@@ -60,6 +62,31 @@ exports.createContact = async (req, res, next) => {
             contact 
         });
 
+    } catch (error) {
+        next(error);
+    }
+};
+
+// Update contact - PUT /api/contacts/:id
+exports.updateContact = async (req, res, next) => {
+    try {
+        const { id } = req.params;
+        
+        if (Object.keys(req.body).length === 0) {
+            return res.status(400).send({ message: 'No fields provided to update' });
+        }
+        
+        const contact = await updateContactInDb(id, req.body);
+        
+        if (!contact) {
+            return res.status(404).send({ message: 'Contact not found' });
+        }
+        
+        return res.status(200).send({
+            message: 'Contact updated successfully',
+            contact
+        });
+        
     } catch (error) {
         next(error);
     }
