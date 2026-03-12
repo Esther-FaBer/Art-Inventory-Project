@@ -4,7 +4,7 @@ const { fetchGalleries,
     updateGallery, 
     deleteGallery, 
     fetchGalleryExhibitions, 
-    searchGallleries } =  require("../models/galleries.model");
+    searchGalleries } =  require("../models/galleries.model");
 
 // GET /api/galleries
 exports.getGalleries = async (req, res, next) => {
