@@ -51,3 +51,15 @@ exports.updateRole = async (roleId, roleData) => {
     
     return roles[0];
 };
+
+// delete role
+exports.deleteRole = async (roleId) => {
+    const { rows: roles } = await db.query(
+        `DELETE FROM roles
+         WHERE role_id = $1
+         RETURNING *`,
+        [roleId]
+    );
+    
+    return roles[0];
+};

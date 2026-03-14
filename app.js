@@ -18,9 +18,9 @@ console.log("Loading contact routes...");
 const contactRoutes = require("./routes/contact.routes");
 console.log("Contact routes loaded");
 
-console.log("Loading role routes...");
-const roleRoutes = require("./routes/role.routes");
-console.log("Role routes loaded");
+console.log("Loading roles routes...");
+const roleRoutes = require("./routes/roles.routes.js");
+console.log("Roles routes loaded");
 
 
 // Import error handlers
