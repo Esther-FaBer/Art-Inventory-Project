@@ -35,3 +35,19 @@ exports.insertRole = async (roleData) => {
 
     return roles[0];
 };
+
+// update role
+exports.updateRole = async (roleId, roleData) => {
+    const { role_name, description } = roleData;
+    
+    const { rows: roles } = await db.query(
+        `UPDATE roles
+         SET role_name = $1,
+             description = $2
+         WHERE role_id = $3
+         RETURNING *`,
+        [role_name, description, roleId]
+    );
+    
+    return roles[0];
+};
