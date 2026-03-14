@@ -85,3 +85,24 @@ exports.updateRole = async (req, res, next) => {
         next(error);
     }
 };
+
+//DELETE /api/roles/:id
+exports.deleteRole = async (req, res, next) => {
+    try {
+        const { id } = req.params;
+        
+        const role = await deleteRoleFromDb(id);
+        
+        if (!role) {
+            return res.status(404).send({ message: 'Role not found' });
+        }
+        
+        return res.status(200).send({
+            message: 'Role deleted successfully',
+            role
+        });
+        
+    } catch (error) {
+        next(error);
+    }
+};
