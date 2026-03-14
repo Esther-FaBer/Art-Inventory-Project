@@ -1,4 +1,9 @@
-const { fetchRoles, fetchRoleById, insertRole } = require("../models/roles.model");
+const { fetchRoles, 
+    fetchRoleById, 
+    insertRole,
+    updateRole: updateRoleInDb,
+    deleteRole: deleteRoleFromDb
+ } = require("../models/roles.model");
 
 // GET /api/roles
 exports.getRoles = async (req, res, next) => {
@@ -51,6 +56,31 @@ exports.createRole = async (req, res, next) => {
             role
         });
 
+    } catch (error) {
+        next(error);
+    }
+};
+
+// PUT /api/roles/:id
+exports.updateRole = async (req, res, next) => {
+    try {
+        const { id } = req.params;
+        
+        if (Object.keys(req.body).length === 0) {
+            return res.status(400).send({ message: 'No fields provided to update' });
+        }
+        
+        const role = await updateRoleInDb(id, req.body);
+        
+        if (!role) {
+            return res.status(404).send({ message: 'Role not found' });
+        }
+        
+        return res.status(200).send({
+            message: 'Role updated successfully',
+            role
+        });
+        
     } catch (error) {
         next(error);
     }
