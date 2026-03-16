@@ -5,8 +5,8 @@ const {
     getRoles,
     getRoleById,
     createRole,
-    updateRole: updateRoleInDb,
-    deleteRole: deleteRoleFromD
+    updateRole,
+    deleteRole
 } = require('../controllers/roles.controller');
 
 // CRUD routes
