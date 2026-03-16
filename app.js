@@ -25,7 +25,8 @@ console.log("Roles routes loaded");
 
 // Import error handlers
 const { 
-    handlePathNotFound, 
+    handlePathNotFound,
+    handleBadRequests, 
     handleCustomErrors,
     handleServerErrors 
 } = require("./errors.js");
@@ -53,7 +54,8 @@ app.get("/api/health", (req, res) => {
 });
 
 // Error handlers
-app.all("*", handlePathNotFound);
+app.use(handlePathNotFound);
+app.use(handleBadRequests);
 app.use(handleCustomErrors);
 app.use(handleServerErrors);
 
