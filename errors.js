@@ -15,7 +15,9 @@ exports.handleBadRequests = (err, req, res, next) => {
 
 exports.handleCustomErrors = (err, req, res, next) => {
     if(err.statusCode || err.status){
-    res.status(err.statusCode || err.status).send({ msg: err.msg || err.message });
+    res.status(err.statusCode || err.status).send({ 
+        msg: err.msg || err.message
+    });
     } else {
         next(err);
     }

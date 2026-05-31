@@ -94,4 +94,8 @@ await db.query(`CREATE TABLE contact_roles(
     PRIMARY KEY (contact_id, role_id)
     );`);
 
+console.log("Seed completed!");
+
 }
+
+module.exports = seed;
