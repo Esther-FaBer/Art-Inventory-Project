@@ -2,14 +2,14 @@
   "name": "art-inventory-project",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "jest app",
     "seed-test": "NODE_ENV=test node db/seed-run.js",
     "seed-dev": "NODE_ENV=development node db/seed-run.js",
     "create-dbs": "psql -f db/setup.sql",
     "test-utils": "jest utils",
-    "dev": "nodemon listen.js"
+    "dev": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
