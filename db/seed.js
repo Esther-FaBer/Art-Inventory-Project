@@ -94,6 +94,27 @@ await db.query(`CREATE TABLE contact_roles(
     PRIMARY KEY (contact_id, role_id)
     );`);
 
+// Import the dev data and run the seed
+const devData = require('./data/development-data/index.js');
+
+    seed(
+    devData.artists,
+    devData.galleries,
+    devData.roles,
+    devData.contacts,
+    devData.artworks,
+    devData.exhibitions,
+    devData.artwork_exhibitions,
+    devData.contact_roles
+    )
+  .then(() => {
+    console.log('Seed completed!');
+    db.end();
+  })
+  .catch((err) => {
+    console.error('Seed failed:', err);
+    db.end();
+  });
 console.log("Seed completed!");
 
 }
