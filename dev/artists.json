@@ -138,5 +138,11 @@
         "death_year": null,
         "nationality": "American",
         "biography": "Kerry James Marshall is an American painter whose monumental figurative works centre the Black experience within the Western art historical tradition. Working with richly dark pigments to depict Black figures with dignity, joy, and complexity, Marshall creates works that deliberately intervene in a canon that has historically excluded or marginalised Black subjects. He is widely regarded as one of the most significant painters working today and his works have achieved landmark prices at auction."
-    }
+    },
+    { 
+    "artist_name": "Gustav Klimt", 
+    "birth_year": 1862,
+    "death_year": 1918,
+    "nationality": "Austrian",
+    "biography": "Gustav Klimt was an Austrian Symbolist painter and one of the most prominent members of the Vienna Secession movement. Known for his decorative style and use of gold leaf, his most celebrated works include The Kiss and Portrait of Adele Bloch-Bauer I." }
 ]

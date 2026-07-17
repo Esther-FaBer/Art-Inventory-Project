@@ -1,20 +1,32 @@
 [
-    {
-        "gallery_name": "Burlington Arcade, London",
-        "location": "London",
-        "contact_email": "london@gallery.com",
-        "phone_numer": "+44 208 7788 9900"
-    },
-    {
-        "gallery_name": "MadisonAvenue, New york",
-        "location": "New York",
-        "contact_email": "nyc@gallery.com",
-        "phone_numer": "+1 212 789 9440"
-    },
-    {
-        "gallery_name": "Connaught Central",
-        "location": "Hong Kong",
-        "contact_email": "hk@gallery.com",
-        "phone_numer": "+852 2345 5678"
-    }
+  {
+    "gallery_name": "Burlington Arcade, London", 
+    "address": "Burlington Arcade", 
+    "city": "London", 
+    "country": "United Kingdom", 
+    "contact_email": "london@gallery.com", 
+    "phone_number": "+44 208 7788 9900", 
+    "website": "www.burlingtongallery.com", 
+    "description": "A prestigious contemporary art gallery in the heart of Mayfair." 
+},
+  {
+    "gallery_name": "MadisonAvenue, New York", 
+    "address": "Madison Avenue", 
+    "city": "New York", 
+    "country": "United States", 
+    "contact_email": "nyc@gallery.com", 
+    "phone_number": "+1 212 789 9440", 
+    "website": "www.madisonavenuegallery.com", 
+    "description": "A leading contemporary art gallery on the Upper East Side." 
+},
+  { 
+    "gallery_name": "Connaught Central", 
+    "address": "Connaught Road Central", 
+    "city": "Hong Kong", 
+    "country": "China", 
+    "contact_email": "hk@gallery.com", 
+    "phone_number": "+852 2345 5678", 
+    "website": "www.connaughtcentral.com", 
+    "description": "A premier gallery specialising in Asian and international contemporary art." 
+}
 ]
