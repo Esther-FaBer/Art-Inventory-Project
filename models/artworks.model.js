@@ -17,7 +17,7 @@ exports.fetchArtworks = async () => {
             aw.status, 
             aw.vat_status, 
             aw.edition
-            FFROM artworks aw
+            FROM artworks aw
             LEFT JOIN artists ar ON aw.artist_id = ar.artist_id
             ORDER BY aw.artwork_id DESC`
         );    
