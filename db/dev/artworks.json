@@ -14,7 +14,8 @@
         "unit": "cm"
       },
       "status": "sold",
-      "vat_status": "Bond"
+      "vat_status": "Bond",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Georgia_O%27Keeffe_-_Black_Iris_-_Google_Art_Project.jpg/800px-Georgia_O%27Keeffe_-_Black_Iris_-_Google_Art_Project.jpg"
     },
     {
       "artist_name": "Jenny Saville",
@@ -31,7 +32,8 @@
         "unit": "cm"
       },
       "status": "available",
-      "vat_status": "Temporary Admissions"
+      "vat_status": "Temporary Admissions",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Jenny_Saville_placeholder.jpg/800px-placeholder.jpg"
     },
     {
       "artist_name": "Louise Bourgeois",
@@ -48,7 +50,8 @@
         "unit": "cm"
       },
       "status": "available",
-      "vat_status": "Free Circulation"
+      "vat_status": "Free Circulation",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Louise_Bourgeois_placeholder.jpg/800px-placeholder.jpg"
     },
     {
       "artist_name": "Cindy Sherman",
@@ -65,7 +68,8 @@
         "unit": "cm"
       },
       "status": "available",
-      "vat_status": "Temporary Admissions"
+      "vat_status": "Temporary Admissions",
+      "image_url": "https://placehold.co/400x500/e0e0e0/9aa0a6?text=Artwork"
     },
     {
       "artist_name": "Jenny Saville",
@@ -82,7 +86,8 @@
         "unit": "cm"
       },
       "status": "available",
-      "vat_status": "Temporary Admissions"
+      "vat_status": "Temporary Admissions",
+      "image_url": "https://placehold.co/400x500/e0e0e0/9aa0a6?text=Artwork"
     },
     {
       "artist_name": "Georgia O'Keeffe",
@@ -99,7 +104,8 @@
         "unit": "cm"
       },
       "status": "available",
-      "vat_status": "Temporary Admissions"
+      "vat_status": "Temporary Admissions",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Georgia_O%27Keeffe_-_Abstraction_White_Rose.jpg/800px-Georgia_O%27Keeffe_-_Abstraction_White_Rose.jpg"
     },
     {
         "artist_name": "Frida Kahlo",
@@ -116,7 +122,8 @@
             "unit": "cm"
         },
         "status": "sold",
-        "vat_status": "Free Circulation"
+        "vat_status": "Free Circulation",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Frida_Kahlo_%28self_portrait%29.jpg/800px-Frida_Kahlo_%28self_portrait%29.jpg"
     },
     {
         "artist_name": "Jean-Michel Basquiat",
@@ -133,7 +140,8 @@
             "unit": "cm"
         },
         "status": "sold",
-        "vat_status": "Bond"
+        "vat_status": "Bond",
+        "image_url": "https://placehold.co/400x500/e0e0e0/9aa0a6?text=Artwork"
     },
     {
         "artist_name": "Yayoi Kusama",
@@ -150,7 +158,8 @@
             "unit": "cm"
         },
         "status": "available",
-        "vat_status": "Temporary Admissions"
+        "vat_status": "Temporary Admissions",
+        "image_url": "https://placehold.co/400x500/e0e0e0/9aa0a6?text=Artwork"
     },
     {
         "artist_name": "Louise Bourgeois",
@@ -167,7 +176,8 @@
             "unit": "cm"
         },
         "status": "sold",
-        "vat_status": "Bond"
+        "vat_status": "Bond",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Ottawa_spider.jpg/800px-Ottawa_spider.jpg"
     },
     {
         "artist_name": "David Hockney",
@@ -184,7 +194,8 @@
             "unit": "cm"
         },
         "status": "sold",
-        "vat_status": "Free Circulation"
+        "vat_status": "Free Circulation",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/David_Hockney_A_Bigger_Splash_placeholder.jpg/800px-placeholder.jpg"
     },
     {
         "artist_name": "Francis Bacon",
@@ -201,7 +212,8 @@
             "unit": "cm"
         },
         "status": "sold",
-        "vat_status": "Bond"
+        "vat_status": "Bond",
+        "image_url": "https://placehold.co/400x500/e0e0e0/9aa0a6?text=Artwork"
     },
     {
         "artist_name": "Zanele Muholi",
@@ -218,7 +230,8 @@
             "unit": "cm"
         },
         "status": "available",
-        "vat_status": "Temporary Admissions"
+        "vat_status": "Temporary Admissions",
+        "image_url": "https://placehold.co/400x500/e0e0e0/9aa0a6?text=Artwork"
     },
     {
         "artist_name": "Gustav Klimt",
@@ -235,7 +248,8 @@
             "unit": "cm"
         },
         "status": "available",
-        "vat_status": "Free Circulation"
+        "vat_status": "Free Circulation",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Klimt_-_Birkenwald.jpg/800px-Klimt_-_Birkenwald.jpg"
     },
     {
         "artist_name": "Ai Weiwei",
@@ -252,7 +266,8 @@
             "unit": "cm"
         },
         "status": "sold",
-        "vat_status": "Bond"
+        "vat_status": "Bond",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/cinquante/Ai_Weiwei_Sunflower_Seeds_Tate.jpg/800px-placeholder.jpg"
     },
     {
         "artist_name": "Barbara Hepworth",
@@ -269,7 +284,8 @@
             "unit": "cm"
         },
         "status": "available",
-        "vat_status": "Temporary Admissions"
+        "vat_status": "Temporary Admissions",
+        "image_url": "https://placehold.co/400x500/e0e0e0/9aa0a6?text=Artwork"
     },
     {
         "artist_name": "Kerry James Marshall",
@@ -286,7 +302,8 @@
             "unit": "cm"
         },
         "status": "available",
-        "vat_status": "Free Circulation"
+        "vat_status": "Free Circulation",
+        "image_url": "https://placehold.co/400x500/e0e0e0/9aa0a6?text=Artwork"
     },
     {
         "artist_name": "Lee Krasner",
@@ -303,7 +320,8 @@
             "unit": "cm"
         },
         "status": "available",
-        "vat_status": "Temporary Admissions"
+        "vat_status": "Temporary Admissions",
+        "image_url": "https://placehold.co/400x500/e0e0e0/9aa0a6?text=Artwork"
     },
     {
         "artist_name": "Pablo Picasso",
@@ -320,7 +338,8 @@
             "unit": "cm"
         },
         "status": "sold",
-        "vat_status": "Bond"
+        "vat_status": "Bond",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Pablo_Picasso%2C_1937%2C_Weeping_Woman%2C_oil_on_canvas%2C_60_x_49_cm%2C_Tate_Modern%2C_London.jpg/800px-Pablo_Picasso%2C_1937%2C_Weeping_Woman%2C_oil_on_canvas%2C_60_x_49_cm%2C_Tate_Modern%2C_London.jpg"
     },
     {
         "artist_name": "Alma Thomas",
@@ -354,7 +373,8 @@
             "unit": "cm"
         },
         "status": "available",
-        "vat_status": "Temporary Admissions"
+        "vat_status": "Temporary Admissions",
+        "image_url": "https://placehold.co/400x500/e0e0e0/9aa0a6?text=Artwork"
     },
     {
         "artist_name": "Cecily Brown",
@@ -371,7 +391,8 @@
             "unit": "cm"
         },
         "status": "available",
-        "vat_status": "Temporary Admissions"
+        "vat_status": "Temporary Admissions",
+        "image_url": "https://placehold.co/400x500/e0e0e0/9aa0a6?text=Artwork"
     },
     {
         "artist_name": "Lynette Yiadom-Boakye",
@@ -388,7 +409,8 @@
             "unit": "cm"
         },
         "status": "sold",
-        "vat_status": "Free Circulation"
+        "vat_status": "Free Circulation",
+        "image_url": "https://placehold.co/400x500/e0e0e0/9aa0a6?text=Artwork"
     },
     {
         "artist_name": "Katsushika Hokusai",
@@ -405,7 +427,8 @@
             "unit": "cm"
         },
         "status": "sold",
-        "vat_status": "Bond"
+        "vat_status": "Bond",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Tsunami_by_hokusai_19th_century.jpg/800px-Tsunami_by_hokusai_19th_century.jpg"
     },
     {
         "artist_name": "Zanele Muholi",
@@ -422,6 +445,7 @@
             "unit": "cm"
         },
         "status": "available",
-        "vat_status": "Temporary Admissions"
+        "vat_status": "Temporary Admissions",
+        "image_url": "https://placehold.co/400x500/e0e0e0/9aa0a6?text=Artwork"
     }
 ]
